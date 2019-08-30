@@ -1,0 +1,70 @@
+html,
+body,
+#root {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.flex-master {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100vh;
+  overflow: auto;
+}
+.page-header {
+  flex: none;
+  padding-bottom: 5px;
+}
+.page-header .bui-navbar-divheader,
+.sidebar-left .bui-navbar-ul {
+  position: unset;
+}
+.page-content {
+  flex: 1; /* resize in container */
+  overflow: auto; /* IMPORTANT for FireFox */
+
+  /* new flex container for content */
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-left {
+  flex: none;
+  background-color: #00568f;
+
+  padding: 0px;
+  width: auto;
+  overflow: auto;
+  color: white;
+}
+.content-container {
+  flex: 1 1 auto;
+  background: #f3f3f3;
+  padding: 20px;
+  width: 100%;
+  overflow-y: auto;
+
+  display: flex; /* new flex for content/ads*/
+  flex-direction: row;
+}
+.main-content {
+  flex: 1 1 auto;
+
+  width: 100%;
+  padding: 10px;
+}
+.page-ads {
+  flex: 0 0 auto;
+  width: 180px;
+  overflow: hidden;
+
+  display: flex; /* new flex for ads */
+  flex-direction: column;
+}
+
+footer {
+  flex: 0 0 auto;
+  background: #535353;
+  color: white;
+  padding: 10px;
+}

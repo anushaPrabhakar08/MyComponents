@@ -1,0 +1,80 @@
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .container-box{
+    border:0.0625rem solid #ccc;
+    width:86%;
+    margin:1% 7%;
+    display:block;
+    box-shadow:0.0625rem 0.0625rem 0.25rem #ccc;
+  }
+  .heading{
+    border:0.0625rem solid #ccc;
+    background-color:#fcfcfc;
+    width:100%;
+  }
+  .sample-container{
+    background-color:#fcfcfc;
+    border:0.0625rem solid #ccc;
+    width:96%;
+    margin:1% 2%;
+  }
+  .props-table-box{
+    width:98%;
+    margin:1%;
+  }
+  .description-details{
+    border: 1px solid #ccc;
+    line-height: 46px;
+  }
+  
+  .description-header{
+    background:#78BE20;
+     line-height: 46px;
+  }
+  .props-description{
+    border-collapse: collapse;
+    flex:0 1 auto;
+    width:100%;
+    table-layout:auto;
+    text-align:center;
+  }
+  .description-body .description-details:first-of-type, .description-details:nth-of-type(2){
+    padding-left: 10px;
+    text-align: left;
+  }
+  .code-box{
+    border:0.0625rem solid #ccc;
+    width:99%; 
+    height:200px;
+  }
+  
+
+  /* ----------------Button--------------------- */
+    /* Label Colors */
+.primary{
+    color: #00568F;
+}
+.secondary{
+    color:#55565A ;
+}
+.accent{
+    color:#009775;
+}
+.warning{
+    color: #E35205;
+}
+.error{
+    color: #BA0C2F;
+}
+.success{
+    color: #78BE20;
+}
+.quite{
+    color: #55565A;
+}
+.emphasis{
+    color: #00568F;
+}
