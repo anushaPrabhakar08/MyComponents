@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../Switch Button/SwitchButton.css">
+</head>
+
+<body class="bui-body">
+    <h1>Toggle-Switch</h1>
+    <h3>Switches toggle the state of a single setting on or off. They are the preferred way to adjust settings on
+        mobile.</h3>
+    <div class="tabs">
+
+        <div class="tab">
+            <input type="radio" id="tab-1" name="tab-group-1" checked>
+            <label for="tab-1" class="bui-tabs-label">Normal</label>
+            <div class="bui-tabs">
+                <div class="bui-tabs-code">
+                    <code>
+                <pre class="bui-tabs-pre">
+                        .bui-switch-toggle {
+                            position: relative;
+                            display: inline-block;
+                            width: 30px;
+                            height: 14px;
+                            top: 3px;
+                        }
+                
+                        .bui-switch-checkbox {
+                            opacity: 0;
+                        }
+                
+                        .bui-switch-slider {
+                            position: absolute;
+                            cursor: pointer;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-color: #CAC9C7;
+                            transition: .4s;
+                        }
+                
+                        .bui-switch-slider:before {
+                            position: absolute;
+                            content: "";
+                            height: 12px;
+                            width: 12px;
+                            left: 1px;
+                            bottom: 1px;
+                            background-color: #FFFFFF;
+                            transition: .4s;
+                        }
+                
+                        .bui-switch-checkbox:checked+.bui-switch-slider {
+                            background-color: #00568F;
+                        }
+                
+                        .bui-switch-checkbox:checked+.bui-switch-slider:before {
+                            transform: translateX(16px);
+                        }
+                
+                        .bui-switch-slider.bui-switch-round {
+                            border-radius: 8px;
+                        }
+                
+                        .bui-switch-slider.bui-switch-round:before {
+                            border-radius: 50%;
+                        }
+                
+                        .bui-switch-label {
+                            padding-right: 10px;
+                            color: #55565A;
+                            font-size: 14px;
+                        }   
+                </pre>
+            </code>
+                </div>
+                <div class="bui-switch-1">
+                    <h2>Toggle Switch</h2>
+                    <strong>Normal</strong>
+                    <label class="bui-switch-label">Wifi</label>
+                    <label class="bui-switch-toggle">
+                        <input type="checkbox" class="bui-switch-checkbox">
+                        <span class="bui-switch-slider bui-switch-round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab">
+            <input type="radio" id="tab-2" name="tab-group-1">
+            <label for="tab-2" class="bui-tabs-label">Pressed</label>
+            <div class="bui-tabs-2">
+                <div class="bui-tabs-code">
+                    <code>
+                    <pre class="bui-tabs-pre">
+                            .bui-switch-toggle {
+                                position: relative;
+                                display: inline-block;
+                                width: 30px;
+                                height: 14px;
+                                top: 3px;
+                            }
+                    
+                            .bui-switch-checkbox {
+                                opacity: 0;
+                            }
+                    
+                            .bui-switch-slider {
+                                position: absolute;
+                                cursor: pointer;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background-color: #CAC9C7;
+                                transition: .4s;
+                            }
+                    
+                            .bui-switch-slider:before {
+                                position: absolute;
+                                content: "";
+                                height: 12px;
+                                width: 12px;
+                                left: 1px;
+                                bottom: 1px;
+                                background-color: #FFFFFF;
+                                transition: .4s;
+                            }
+                    
+                            .bui-switch-checkbox:checked+.bui-switch-slider {
+                                background-color: #00568F;
+                            }
+                    
+                            .bui-switch-checkbox:checked+.bui-switch-slider:before {
+                                transform: translateX(16px);
+                            }
+                    
+                            .bui-switch-slider.bui-switch-round {
+                                border-radius: 8px;
+                            }
+                    
+                            .bui-switch-slider.bui-switch-round:before {
+                                border-radius: 50%;
+                            }
+                    
+                            .bui-switch-label {
+                                padding-right: 10px;
+                                color: #55565A;
+                                font-size: 14px;
+                            }
+                    </pre>
+                </code>
+                </div>
+                <div class="bui-switch-2">
+                    <h2>Toggle Switch</h2>
+                    <strong>Pressed</strong>
+                    <label class="bui-switch-label">Wifi</label>
+                    <label class="bui-switch-toggle">
+                        <input type="checkbox" checked class="bui-switch-checkbox">
+                        <span class="bui-switch-slider bui-switch-round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab">
+            <input type="radio" id="tab-3" name="tab-group-1">
+            <label for="tab-3" class="bui-tabs-label">Disabled</label>
+            <div class="bui-tabs-3">
+                <div class="bui-tabs-code">
+                    <code>
+                <pre class="bui-tabs-pre">
+                        .bui-switch-toggle {
+                            position: relative;
+                            display: inline-block;
+                            width: 30px;
+                            height: 14px;
+                            top: 3px;
+                        }
+                
+                        .bui-switch-checkbox {
+                            opacity: 0;
+                        }
+                
+                        .bui-switch-slider {
+                            position: absolute;
+                            cursor: pointer;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-color: #CAC9C7;
+                            transition: .4s;
+                        }
+                
+                        .bui-switch-slider:before {
+                            position: absolute;
+                            content: "";
+                            height: 12px;
+                            width: 12px;
+                            left: 1px;
+                            bottom: 1px;
+                            background-color: #FFFFFF;
+                            transition: .4s;
+                        }
+                
+                        .bui-switch-checkbox:checked+.bui-switch-slider {
+                            background-color: #00568F;
+                        }
+                
+                        .bui-switch-checkbox:checked+.bui-switch-slider:before {
+                            transform: translateX(16px);
+                        }
+                
+                        .bui-switch-slider.bui-switch-round {
+                            border-radius: 8px;
+                        }
+                
+                        .bui-switch-slider.bui-switch-round:before {
+                            border-radius: 50%;
+                        }
+                
+                        .bui-switch-label {
+                            padding-right: 10px;
+                            color: #55565A;
+                            font-size: 14px;
+                        }
+                
+                        .bui-switch-checkbox+.bui-switch-disabled,
+                        .bui-switch-3 .bui-switch-label {
+                            opacity: 0.3;
+                        }
+                </pre>
+            </code>
+                </div>
+                <div class="bui-switch-3">
+                    <h2>Toggle Switch</h2>
+                    <strong>Disabled</strong>
+
+                    <label class="bui-switch-label">Wifi</label>
+                    <label class="bui-switch-toggle">
+                        <input type="checkbox" class="bui-switch-checkbox" disabled>
+                        <span class="bui-switch-slider bui-switch-round bui-switch-disabled"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div>
+        <h2>CSS Properties</h2>
+        <table class="bui-tabs-table">
+            <thead>
+                <tr>
+                    <th class="bui-tabs-th">Attributes</th>
+                    <th class="bui-tabs-th">Description</th>
+                    <th class="bui-tabs-th">Default Value</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="bui-tabs-td">thumb</td>
+                <td class="bui-tabs-td">The background color of the thumb </td>
+                <td class="bui-tabs-td">#FFFFFF</td>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Track</td>
+                <td class="bui-tabs-td">The background color of the track</td>
+                <td class="bui-tabs-td">#CAC9C7</td>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Pressed</td>
+                <td class="bui-tabs-td">The background color of the track</td>
+                <td class="bui-tabs-td">#00568F</td>
+            </tr>
+
+            <tr>
+                <td class="bui-tabs-td">Text label </td>
+                <td class="bui-tabs-td">the font family of text label</td>
+                <td class="bui-tabs-td">Helvetica Neue Regular </td>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Disabled</td>
+                <td class="bui-tabs-td">The opacity of the label</td>
+                <td class="bui-tabs-td">30%</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

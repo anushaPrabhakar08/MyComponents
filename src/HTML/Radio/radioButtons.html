@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Radio Buttons</title>
+        <link rel="stylesheet" type="text/css" href="..\css\radioButtons.css">
+
+
+    </head>
+    <style>
+
+   
+     </style>
+
+        <body class="bui-radiobutton-body">
+                <h1>Selection Control</h1>
+<pre class="bui-radiobutton-preclass">Selection controls allow users to select options. Selection controls allow users to complete tasks that involve making choices such as selecting options or switching 
+settings on or off. Selection controls are found on screens that ask users to make decisions or declare preferences such as settings or dialogs.
+</pre>
+            <!--Description-->
+
+            <button class="bui-tablink-button" onclick="openType('multiple')">Multiple Radio Button</button>
+            <button class="bui-tablink-button" onclick="openType('single')" id="default">Single Radio Button</button>
+
+
+<div class="bui-button-type-content" id="single">
+                <div class="bui-code-box">
+                      
+                    <h1 class="bui-heading-h1"> Single Radio Buttons</h1>
+                    <hr>
+                    <div class="bui-radiobutton-codebox">
+<code>
+    <pre class="bui-radiobutton-code">
+.bui-radiobutton-body,
+.bui-radiobutton-disabledlabel,
+.bui-radiobutton-preclass {
+    color:  #55565A ;
+    font-family: Helvetica;
+}
+
+.bui-radiobutton-codebox {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.bui-radiobutton-formclass, 
+.bui-radiobutton-code{
+    padding-left: 20px;
+    min-height: 400px;
+    overflow: auto;
+    min-width: 40%;
+}
+.bui-radiobutton {
+    margin-right: 30px;
+    float: left;
+    height: auto;
+    width: auto;
+    background-color: #fafafb;
+    padding: 12px 20px;
+}
+
+.bui-radiobutton-code {
+    margin-right: 50px;
+    min-height: 400px;
+    min-width: 50%;
+    padding-left: 20px;
+    color: #00568F;
+    font-weight: bold;
+    border:none;
+}
+
+.bui-radiobutton-container{
+    margin-left: 30px;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.bui-radiobutton-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+
+.bui-radiobutton-select, 
+.bui-radiobutton-selectdisabled{
+    margin-bottom: 12px;
+    margin-right: 10px;
+    border: 1px solid #CAC9C7; 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF ;
+    border-radius: 50%;
+    }
+
+.bui-radiobutton-selectdisabled {
+    border:1px solid #CAC9C7;
+    }
+    
+.bui-radiobutton-container:hover input ~ .bui-radiobutton-select {
+    border: 1px solid #0569A3;
+    }
+    
+    .bui-radiobutton-container input:checked ~ .bui-radiobutton-select {
+        border: 1px solid #00568F; 
+        background-color: white;
+    }
+    
+.bui-radiobutton-container input:checked ~ .bui-radiobutton-select:after {
+    display: block;
+    color:  #00568F;
+    }
+    
+.bui-radiobutton-container .bui-radiobutton-select:after {
+        content: "";
+        position: absolute;
+        display: none;
+        top: 5px;
+        left: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #00568F;
+    }
+    .bui-radiobutton-disabledlabel{
+        opacity: 0.3;
+    }
+.bui-radiobutton-disabled {
+    border: 1px solid #CAC9C7 ;
+    }
+
+.bui-radiobutton-label{
+    margin-bottom: 16px;
+}
+
+</pre>
+</code> 
+    <div class="bui-radiobutton-formclass">
+        <h2>Sample</h2>
+        
+            <form name="radiobuttonForm"> 
+                    
+                <div class="bui-radiobutton">
+                    <h3 class="bui-radiobutton-label">Single Radio Buttons</h3>
+                    <label class="bui-radiobutton-container">
+                        <span class="bui-radiobutton-span">Normal</span> 
+                        <input type="radio" name="radio">
+                        <span class="bui-radiobutton-select"></span>
+                    </label>
+                    <label class="bui-radiobutton-container bui-radiobutton-disabledlabel">
+                            <span class="bui-radiobutton-span">Disabled</span> 
+                        <input type="radio" name="radio" disabled>
+                        <span class="bui-radiobutton-selectdisabled bui-radiobutton-disabled"></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+                </div>
+        
+             </div>   
+        </div>       
+
+<div class="bui-button-type-content"id="multiple">
+        <div class="bui-code-box">
+            <h1 class="bui-heading-h1">Multiple Radio Buttons</h1>
+            <hr>
+            <div class="bui-radiobutton-codebox">
+                
+<code>
+<pre class="bui-radiobutton-code">
+.bui-radiobutton-body,
+.bui-radiobutton-disabledlabel,
+.bui-radiobutton-preclass {
+    color:  #55565A ;
+    font-family: Helvetica;
+}
+
+.bui-radiobutton-codebox {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.bui-radiobutton-formclass, .bui-radiobutton-code{
+    padding-left: 20px;
+    min-height: 400px;
+    overflow: auto;
+    min-width: 40%;
+}
+.bui-radiobutton {
+    margin-right: 30px;
+    float: left;
+    height: auto;
+    width: auto;
+    background-color: #fafafb;
+    padding: 12px 20px;
+}
+
+.bui-radiobutton-code {
+    margin-right: 50px;
+    min-height: 400px;
+    min-width: 50%;
+    padding-left: 20px;
+    color: #00568F;
+    font-weight: bold;
+    border:none;
+}
+
+.bui-radiobutton-container{
+    margin-left: 30px;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.bui-radiobutton-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+
+.bui-radiobutton-select{
+    margin-bottom: 12px;
+    margin-right: 10px;
+    border: 1px solid #CAC9C7; 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF ;
+    border-radius: 50%;
+    }
+
+.bui-radiobutton-selectdisabled {
+    border:1px solid #CAC9C7;
+    }
+    
+.bui-radiobutton-container:hover input ~ .bui-radiobutton-select {
+    border: 1px solid #0569A3;
+    }
+    
+    .bui-radiobutton-container input:checked ~ .bui-radiobutton-select {
+        border: 1px solid #00568F; 
+        background-color: white;
+    }
+    
+.bui-radiobutton-container input:checked ~ .bui-radiobutton-select:after {
+    display: block;
+    color:  #00568F;
+    }
+    
+.bui-radiobutton-container .bui-radiobutton-select:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00568F;
+}
+
+.bui-radiobutton-label{
+    margin-bottom: 16px;
+} 
+</pre>
+</code>
+<div class="bui-radiobutton-formclass">
+        <h2>Sample</h2>               
+                <form name="radiobuttonForm1">            
+                <div class="bui-radiobutton">
+                    <h3 class="bui-radiobutton-label">Group of Radio Buttons</h3>
+                    <label class="bui-radiobutton-container">
+                        <span class="bui-radiobutton-span">Label</span> 
+                        <input type="radio" name="radio">
+                        <span class="bui-radiobutton-select"></span>
+                    </label>
+                    <label class="bui-radiobutton-container">
+                        <span class="bui-radiobutton-span">Label</span>  
+                        <input type="radio" name="radio">
+                        <span class="bui-radiobutton-select"></span>
+                    </label>
+                    <label class="bui-radiobutton-container">
+                        <span class="bui-radiobutton-span">Label</span> 
+                        <input type="radio" name="radio">
+                        <span class="bui-radiobutton-select"></span>
+                    </label>
+                    <label class="bui-radiobutton-container">
+                        <span class="bui-radiobutton-span">Label</span>  
+                        <input type="radio" name="radio">
+                        <span class="bui-radiobutton-select"></span>
+                    </label>
+                </div>
+            
+            </form>   
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+            
+<div>
+        <h2>CSS Properties</h2>
+        <table class="bui-radiobutton-table">
+                <tr>
+                  <th class="bui-radiobutton-th">Attributes</th>
+                  <th class="bui-radiobutton-th">Description</th>
+                  <th class="bui-radiobutton-th">Default Value</th>
+                </tr>
+                <tr>
+                  <td class="bui-radiobutton-td">Background color</td>
+                  <td class="bui-radiobutton-td">The background color of all the radio buttons </td>
+                  <td class="bui-radiobutton-td">#FFFFFF</td>
+                </tr>
+                <tr>
+                    <td class="bui-radiobutton-td">Label Font</td>
+                    <td class="bui-radiobutton-td">The font family of the label</td>
+                    <td class="bui-radiobutton-td">Helvetica Neue Regular</td>
+                    </tr>
+                <tr>
+                    <td class="bui-radiobutton-td">Label size</td>
+                    <td class="bui-radiobutton-td">The font size of the label</td>
+                    <td class="bui-radiobutton-td">14px</td>
+                </tr>
+                <tr>
+                <td class="bui-radiobutton-td">Label text color</td>
+                <td class="bui-radiobutton-td">The label color  </td>
+                <td class="bui-radiobutton-td">#55565A</td>
+                </tr>
+                <tr>
+                  <td class="bui-radiobutton-td"> Stroke</td>
+                  <td class="bui-radiobutton-td">The border of all radio buttons</td>
+                  <td class="bui-radiobutton-td">#CAC9C7 </td>
+                </tr>
+                <tr>
+                        <td class="bui-radiobutton-td">Stroke</td>
+                        <td class="bui-radiobutton-td">on hover the border color changes</td>
+                        <td class="bui-radiobutton-td">#0569A3 </td>
+                      </tr>
+                <tr>
+                        <td class="bui-radiobutton-td">Icon</td>
+                        <td class="bui-radiobutton-td">On select the icon appears</td>
+                        <td class="bui-radiobutton-td">00568F </td>
+                </tr>
+                <tr>
+                        <td class="bui-radiobutton-td">Opacity</td>
+                        <td class="bui-radiobutton-td">Opacity will be applied on disabled</td>
+                        <td class="bui-radiobutton-td">0.3 </td>
+                </tr>
+               
+              </table>
+</div>
+
+
+<script>
+        function openType(buiRadiobuttonName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("bui-button-type-content");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("bui-tablink-button");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(buiRadiobuttonName).style.display = "block";
+          //evt.currentTarget.className += " active";
+        }
+        document.getElementById("default").click();
+    </script>
+
+    </body>
+</html>

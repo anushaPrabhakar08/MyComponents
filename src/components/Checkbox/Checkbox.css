@@ -1,0 +1,66 @@
+/*----CHECKBOX----CHECKBOX----CHECKBOX----CHECKBOX----CHECKBOX-----CHECKBOX-----CHECKBOX-----CHECKBOX-----CHECKBOX----CHECKBOX----CHECKBOX-----CHECKBOX----*/
+
+/*-----------------------label with consists of checkbox-------------------------*/
+.bui-checkbox-container {
+  display: flex;
+  position: relative;
+  padding-left: 1.875rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+/*-----Hide the default checkbox-----*/
+.bui-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/*-----Creating the custom checkbox-----*/
+.bui-checkbox-checkmark {
+  position: absolute;
+  top: -0.25rem;
+  left: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 0.25rem;
+  border: 0.06rem solid #cac9c7;
+  background-color: #ffffff;
+}
+
+.bui-checkmark-normal:hover {
+  border: 0.06rem solid#0569A3;
+}
+/* When the checkbox is checked, add a blue background */
+.bui-checkbox-container input:checked ~ .bui-checkbox-checkmark {
+  background: #00568f;
+  border: 0.06rem solid#00568F;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.bui-checkbox-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.bui-checkbox-container input:checked ~ .bui-checkbox-checkmark:after {
+  display: block;
+}
+.bui-checkbox-checkmark:after {
+  border: solid #ffffff;
+  top: 0.125rem;
+  left: 0.375rem;
+  width: 0.3125rem;
+  height: 0.625rem;
+  border-width: 0 0.1875rem 0.1875rem 0;
+  transform: rotate(40deg);
+  border-radius: 2px;
+}
+/*---- disabled checkbox----*/
+.bui-checkbox-disabled {
+  opacity: 0.3;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Tooltip</title>
+                <link rel="stylesheet" type="text/css" href="tooltip.css">
+            </head>
+<body onload="openType('upload')"> 
+
+
+<h1>Tooltip</h1>
+<pre class="bui-tooltip-preclass">
+        Tooltips display informative text when users hover over, focus on, or tap an element.
+        When activated, tooltips display a text label identifying an element, such as a description of its function.
+</pre>
+
+        <!--Description-->
+        <button class="bui-tablink-button" onclick="openType('upload')">Upload</button>
+        <button class="bui-tablink-button" onclick="openType('filter')">Filter </button>
+        <button class="bui-tablink-button" onclick="openType('delete')">Delete</button>
+        <button class="bui-tablink-button" onclick="openType('list')">List</button>
+        
+        
+                <!-- Upload -->
+        
+<div class="bui-tooltip-type-content"id="upload">
+                <div class="bui-code-box">
+                            <h1 class="bui-heading-h1">Upload1</h1>
+                            <hr>
+                          <div class="bui-tooltip-codeboccontainer">            
+<code><pre class="bui-tooltip-code">
+      
+.bui-tooltip .bui-tooltiptext
+  {
+    visibility: hidden;
+    width: 104px;
+    background-color: #000000;
+    color: #fff;
+    font-family: Helvetica Neue Regular;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    /* padding: 8px 0; */
+    margin: 8px 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 24px;
+    padding-top: 8px;
+    /* Position the tooltip */
+    position: absolute;
+    opacity: 0.5;
+  }
+  
+  .bui-tooltip:hover .bui-tooltiptext
+    {
+      visibility: visible;
+    }
+
+  .bui-tooltip-image,.bui-tooltip-upload 
+    {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 18px;
+      margin-left: 45px;
+      cursor: pointer;
+    }
+  
+  .bui-tooltip-upload
+    {
+    width:24px;
+    opacity: 0.5;
+    }
+</pre> </code>
+            <div class="bui-tooltip-formclass">
+                <h2>Sample</h2>       
+                <form>            
+                    <div>
+                      <h2>Upload</h2>  
+                    <div class="bui-tooltip-container">
+                            <div class="bui-tooltip"> <img class="bui-tooltip-image bui-tooltip-upload" src="image\upload.svg"/>
+                                <label class="bui-tooltiptext">Upload Excel File</label>
+                              </div> 
+                    </div>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Filter -->
+
+<div class="bui-tooltip-type-content"id="filter">
+        <div class="bui-code-box">
+                    <h1 class="bui-heading-h1">Filter</h1>
+                    <hr>
+                  <div class="bui-tooltip-codeboccontainer">            
+<code><pre class="bui-tooltip-code">
+                
+  .bui-tooltip .bui-tooltiptext 
+    {
+      visibility: hidden;
+      width: 104px;
+      background-color: #000000;
+      color: #fff;
+      font-family: Helvetica Neue Regular;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 4px;
+      /* padding: 8px 0; */
+      margin: 8px 0;
+      padding-left: 8px;
+      padding-right: 8px;
+      height: 24px;
+      padding-top: 8px;
+      /* Position the tooltip */
+      position: absolute;
+      opacity: 0.5;
+    }
+    
+  .bui-tooltip:hover .bui-tooltiptext
+    {
+      visibility: visible;
+    }
+
+  .bui-tooltip-image,.bui-tooltip-upload
+    {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 18px;
+      margin-left: 45px;
+      cursor: pointer;
+    }
+          
+</pre> </code>
+              <div class="bui-tooltip-formclass">
+                  <h2>Sample</h2>       
+                  <form>            
+                      <div>
+                        <h2>Filter</h2>  
+                      <div class="bui-tooltip-container">
+                              <div class="bui-tooltip"> <img class="bui-tooltip-image" src="image\filter.svg"/>
+                                  <label class="bui-tooltiptext">Filter</label>
+                                </div> 
+                      </div>
+                      </div>
+                  </form> 
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  <!-- List -->
+<div class="bui-tooltip-type-content"id="list">
+        <div class="bui-code-box">
+                    <h1 class="bui-heading-h1">List</h1>
+                    <hr>
+                  <div class="bui-tooltip-codeboccontainer">            
+<code><pre class="bui-tooltip-code">
+                
+  .bui-tooltip .bui-tooltiptext {
+      visibility: hidden;
+      width: 104px;
+      background-color: #000000;
+      color: #fff;
+      font-family: Helvetica Neue Regular;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 4px;
+      /* padding: 8px 0; */
+      margin: 8px 0;
+      padding-left: 8px;
+      padding-right: 8px;
+      height: 24px;
+      padding-top: 8px;
+      /* Position the tooltip */
+      position: absolute;
+      opacity: 0.5;
+    }
+    
+  .bui-tooltip:hover .bui-tooltiptext {
+      visibility: visible;
+    }
+
+  .bui-tooltip-image,.bui-tooltip-upload{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 18px;
+    margin-left: 45px;
+    cursor: pointer;
+    }
+                          
+</pre> </code>
+            <div class="bui-tooltip-formclass">
+                <h2>Sample</h2>       
+                <form>            
+                    <div>
+                      <h2>List view</h2>  
+                    <div class="bui-tooltip-container">
+                            <div class="bui-tooltip"> <img class="bui-tooltip-image" src="image\list.svg"/>
+                                <label class="bui-tooltiptext">List view</label>
+                              </div> 
+                    </div>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Delete -->
+<div class="bui-tooltip-type-content"id="delete">
+    <div class="bui-code-box">
+                <h1 class="bui-heading-h1">Delete</h1>
+                <hr>
+              <div class="bui-tooltip-codeboccontainer">            
+<code><pre class="bui-tooltip-code">
+            
+.bui-tooltip .bui-tooltiptext {
+    visibility: hidden;
+    width: 104px;
+    background-color: #000000;
+    color: #fff;
+    font-family: Helvetica Neue Regular;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    /* padding: 8px 0; */
+    margin: 8px 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 24px;
+    padding-top: 8px;
+    /* Position the tooltip */
+    position: absolute;
+    opacity: 0.5;
+  }
+  
+.bui-tooltip:hover .bui-tooltiptext {
+    visibility: visible;
+  }
+
+.bui-tooltip-image,.bui-tooltip-upload{
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 18px;
+  margin-left: 45px;
+  cursor: pointer;
+  
+  }
+ </pre> </code>
+                <div class="bui-tooltip-formclass">
+                    <h2>Sample</h2>       
+                    <form>            
+                        <div>
+                          <h2>Delete</h2>  
+                        <div class="bui-tooltip-container">
+                                <div class="bui-tooltip"> <img class="bui-tooltip-image" src="image\delete.svg"/>
+                                    <label class="bui-tooltiptext">Delete</label>
+                                  </div> 
+                        </div>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div>
+      <h2>CSS Properties</h2>
+         <table class="bui-tooltip-table">
+          
+            <tr>
+                <th class="bui-tooltip-th">Attributes</th>
+                <th class="bui-tooltip-th">Description</th>
+                <th class="bui-tooltip-th">Default Value</th>
+            </tr>
+    
+            <tr>
+                <td class="bui-tooltip-td">Background color</td>
+                <td class="bui-tooltip-td">The background color of all the  Container </td>
+                <td class="bui-tooltip-td">#000000 </td>
+            </tr>
+
+            <tr>
+                <td class="bui-tooltip-td">Font color</td>
+                <td class="bui-tooltip-td">Font color of all the labels </td>
+                <td class="bui-tooltip-td">#FFFFFF </td>
+            </tr>
+
+            <tr>
+                <td class="bui-tooltip-td">Font size</td>
+                <td class="bui-tooltip-td">Font size of all the labels </td>
+                <td class="bui-tooltip-td">14px </td>
+            </tr>
+
+            <tr>
+                <td class="bui-tooltip-td">font-family</td>
+                <td class="bui-tooltip-td">font-family of all the labels </td>
+                <td class="bui-tooltip-td">Helvetica Neue Regular </td>
+            </tr>
+
+            <tr>
+                <td class="bui-tooltip-td">opacity</td>
+                <td class="bui-tooltip-td">opacity of all the labels </td>
+                <td class="bui-tooltip-td">0.5</td>
+            </tr>
+  
+      </table>
+  </div>
+
+
+
+    <script>
+            function openType(buitooltipName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("bui-tooltip-type-content");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("bui-tablink-button");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(buitooltipName).style.display = "block";
+           
+          }
+       </script>
+</body>
+</html>

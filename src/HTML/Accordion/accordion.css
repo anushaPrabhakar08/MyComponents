@@ -1,0 +1,91 @@
+/* Accordion Label */
+.bui-accordion-label,
+.bui-accordion-label-icon
+{
+    background-color:#FFFFFF;
+    color: #55565a;
+    font-size: 14px;
+    font-family: Helvetica Neue Regular;
+    cursor: pointer;
+    padding: 0 16px;
+    height:48px;
+    width:auto;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #E2E2E2;
+
+}
+
+/* Accordion Content */
+.bui-accordion-panel,
+.bui-accordion-panel-icon{
+    padding: 0 18px;
+    width:auto;
+    height: 200px;
+    display: none;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+/* For Checkbox */
+.bui-accordion-checkbox
+{
+    width: 31px;
+    position: absolute;
+    z-index: 2;
+    right: 25%;
+    margin: 10px;
+    opacity: 0;
+}
+
+/* Container */
+.bui-accordion-container{
+    width:80%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* On Hover */
+.bui-accordion-label:hover,
+.bui-accordion-label-icon:hover{
+    background: #F0F0F1;
+}
+
+/* On click of accordion, the content will be displayed */
+.bui-accordion-container .bui-accordion-checkbox:checked ~ .bui-accordion-panel,
+.bui-accordion-container .bui-accordion-checkbox:checked ~ .bui-accordion-panel-icon
+{
+    display:block;
+    box-shadow:none;
+    margin-bottom: 15px;
+}
+
+.bui-accordion-container .bui-accordion-checkbox:checked ~ .bui-accordion-label,
+.bui-accordion-container .bui-accordion-checkbox:checked ~ .bui-accordion-label-icon
+{
+    border-bottom:none;
+    /* margin-top: 15px; */
+}
+
+.bui-accordion-container .bui-accordion-checkbox:checked ~ .bui-accordion-label:not(:first-child){
+    margin-top: 15px;
+}
+/* To rotate the arrow */
+.bui-accordion-checkbox:checked +.bui-accordion-label .bui-accordion-arrow,
+.bui-accordion-checkbox:checked +.bui-accordion-label-icon .bui-accordion-arrow
+{
+    transform:rotate(180deg);
+}
+
+.bui-accordion-arrow-position{
+    margin-left: auto;
+}
+
+/* Icon */
+.bui-accordion-image{
+    padding-right: 8px;
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_1415" data-name="Group 1415" transform="translate(-260 -169)">
+    <g id="Group_1412" data-name="Group 1412">
+      <g id="Rectangle_907" data-name="Rectangle 907" transform="translate(263 172)" fill="none" stroke="#78a8c7" stroke-width="1.5">
+        <rect width="18" height="18" rx="2" stroke="none"/>
+        <rect x="0.75" y="0.75" width="16.5" height="16.5" rx="1.25" fill="none"/>
+      </g>
+      <g id="Group_1411" data-name="Group 1411" transform="translate(1 0.25)">
+        <g id="Rectangle_908" data-name="Rectangle 908" transform="translate(266 176)" fill="#fff" stroke="#78a8c7" stroke-width="1">
+          <rect width="1.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+        </g>
+        <g id="Rectangle_911" data-name="Rectangle 911" transform="translate(266 180)" fill="#fff" stroke="#78a8c7" stroke-width="1">
+          <rect width="1.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+        </g>
+        <g id="Rectangle_913" data-name="Rectangle 913" transform="translate(266 184)" fill="#fff" stroke="#78a8c7" stroke-width="1">
+          <rect width="1.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+        </g>
+        <g id="Rectangle_909" data-name="Rectangle 909" transform="translate(269 176)" fill="#fff" stroke="#78a8c7" stroke-width="1">
+          <rect width="7.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="6.5" height="0.5" fill="none"/>
+        </g>
+        <g id="Rectangle_910" data-name="Rectangle 910" transform="translate(269 180)" fill="#fff" stroke="#78a8c7" stroke-width="1">
+          <rect width="7.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="6.5" height="0.5" fill="none"/>
+        </g>
+        <g id="Rectangle_912" data-name="Rectangle 912" transform="translate(269 184)" fill="#fff" stroke="#78a8c7" stroke-width="1">
+          <rect width="7.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="6.5" height="0.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <rect id="Rectangle_914" data-name="Rectangle 914" width="24" height="24" transform="translate(260 169)" fill="none"/>
+  </g>
+</svg>

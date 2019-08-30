@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accordion</title>
+        <link rel="stylesheet" type="text/css" href="Accordion_Layout.css">
+        <link rel="stylesheet" type="text/css" href="accordion.css">
+    </head>
+    <body class="bui-accordion-body">
+        <h1>Accordion</h1>
+        <pre class="bui-accordion-preclass">
+        An accordion menu is a vertically stacked list of headers that can be clicked to reveal or hide content associated with them. It is one of many ways you can expose content to users in a progressive manner. 
+        Allowing people to have control over the content by expanding it or deferring it for later lets them decide what to read and what to ignore. By allowing people to control what content they see and what remains hidden, 
+        the information feels less overwhelming. 
+        </pre>
+
+        <!--Description-->
+        <button class="bui-tablink-button" onclick="openType('accordion-icon')">Accordion with icon</button>
+        <button class="bui-tablink-button" onclick="openType('accordion')" id="default">Accordion </button>
+
+        <div class="bui-accordion-type-content" id="accordion">
+            <div class="bui-code-box">          
+                <h1 class="bui-heading-h1"> Accordion</h1>
+                <hr>
+                <div class="bui-accordion-codebox">
+<code><pre class="bui-accordion-code">
+<!-- 
+
+.bui-accordion-label {
+    background-color:#FFFFFF;
+    color: #55565a;
+    font-size: 14px;
+    font-family: Helvetica Neue Regular;
+    cursor: pointer;
+    padding: 0 16px;
+    height:48px;
+    width:auto;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border-bottom:1px solid #E2E2E2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+/* Accordion Content */
+
+.bui-accordion-panel {
+    padding: 0 18px;
+    width:auto;
+    height: 200px;
+    display: none;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+    
+/* For Checkbox */
+
+.bui-accordion-checkbox {
+    width: 31px;
+    position: absolute;
+    z-index: 2;
+    right: 25%;
+    margin: 10px;
+    opacity: 0;
+}
+    
+/* Container */
+
+.bui-accordion-container {
+    width:80%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+    
+/* On Hover */
+
+.bui-accordion-label:hover {
+    background: #F0F0F1;
+}
+    
+/* On click of accordion, the content will be displayed */
+
+.bui-accordion-container .bui-accordion-checkbox:checked ~ .bui-accordion-panel {
+    display:block;
+    box-shadow:none;
+    margin-bottom: 15px;
+}
+
+.bui-accordion-container .bui-accordion-checkbox:checked ~ .bbui-accordion-label {
+    border-bottom:12px;
+    margin-top: 15px;
+}
+
+/* To rotate the arrow */
+
+.bui-accordion-checkbox:checked +.bui-accordion-label .bui-accordion-arrow {
+    transform:rotate(180deg);
+}
+
+.bui-accordion-arrow-position {
+    margin-left: auto;
+} -->
+
+</pre></code> 
+<div class="bui-accordion-formclass">
+    <h2>Sample</h2>
+    <form name="radiobuttonForm"> 
+        <div>
+            <div class="bui-accordion-container">
+                <input type="checkbox" class="bui-accordion-checkbox" id="bui-accordion-chk1" >
+                <label for="bui-accordion-chk1" class="bui-accordion-label">Group 1<img class="bui-accordion-arrow" src="Icon/Group_1802.svg"/></label>
+                <div class="bui-accordion-panel"> </div>
+            </div>
+    
+            <div class="bui-accordion-container">
+                <input type="checkbox" class="bui-accordion-checkbox" id="bui-accordion-chk2">
+                <label for="bui-accordion-chk2" class="bui-accordion-label">Group 2<img class="bui-accordion-arrow" src="Icon/Group_1802.svg"/></label>
+                <div class="bui-accordion-panel"> </div>
+            </div>
+    
+            <div class="bui-accordion-container">
+                <input type="checkbox" class="bui-accordion-checkbox" id="bui-accordion-chk3">
+                <label for="bui-accordion-chk3" class="bui-accordion-label">Group 3<img class="bui-accordion-arrow" src="Icon/Group_1802.svg"/></label>
+                <div class="bui-accordion-panel"> </div>
+            </div>
+    
+            <div class="bui-accordion-container">
+                <input type="checkbox" class="bui-accordion-checkbox" id="bui-accordion-chk4">
+                <label for="bui-accordion-chk4" class="bui-accordion-label">Group 4<img class="bui-accordion-arrow" src="Icon/Group_1802.svg"/></label>
+                <div class="bui-accordion-panel"> </div>
+            </div>
+    
+            <div class="bui-accordion-container">
+                <input type="checkbox" class="bui-accordion-checkbox" id="bui-accordion-chk5">
+                <label for="bui-accordion-chk5" class="bui-accordion-label">Group 5<img class="bui-accordion-arrow" src="Icon/Group_1802.svg"/></label>
+                <div class="bui-accordion-panel"> </div>
+            </div>
+    
+            <div class="bui-accordion-container">
+                <input type="checkbox" class="bui-accordion-checkbox" id="bui-accordion-chk6">
+                <label for="bui-accordion-chk6" class="bui-accordion-label">Group 6<img class="bui-accordion-arrow" src="Icon/Group_1802.svg"/></label>
+                <div class="bui-accordion-panel"> </div>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>   
+</div>       
+
+<div class="bui-accordion-type-content"id="accordion-icon">
+    <div class="bui-code-box">
+        <h1 class="bui-heading-h1">Accordion with Icon</h1>
+        <hr>
+        <div class="bui-accordion-codebox">            
+<code><pre class="bui-accordion-code">
+<!-- /* Accordion Label */
+
+.bui-accordion-label-icon {
+    background-color:#ffffff;
+    color: #55565a;
+    font-size: 14px;
+    font-family: Helvetica Neue Regular;
+    cursor: pointer;
+    padding: 0 16px;
+    height:48px;
+    width:auto;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border-bottom:1px solid #E2E2E2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Accordion Content */
+
+.bui-accordion-panel-icon {
+    padding: 0 18px;
+    width:auto;
+    height: 200px;
+    display: none;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+/* For Checkbox */
+.bui-accordion-checkbox {
+    width: 31px;
+    position: absolute;
+    z-index: 2;
+    right: 25%;
+    margin: 10px;
+    opacity: 0;
+}
+
+/* Container */
+.bui-accordion-container {
+    width:80%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* On Hover */
+
+.bui-accordion-label-icon:hover {
+    background: #F0F0F1;
+}
+
+/* On click of accordion, the content will be displayed */
+
+.bui-accordion-container .bui-accordion-checkbox:checked ~ .bui-accordion-panel-icon {
+    display:block;
+    box-shadow:none;
+    margin-bottom: 15px;
+}
+
+.bui-accordion-container .bui-accordion-checkbox:checked ~ .bui-accordion-label-icon {
+    border-bottom:12px;
+    margin-top: 15px;
+}
+
+/* To rotate the arrow */
+.bui-accordion-checkbox:checked +.bui-accordion-label-icon .bui-accordion-arrow {
+    transform:rotate(180deg);
+}
+
+.bui-accordion-arrow-position {
+    margin-left: auto;
+}
+
+/* Icon */
+.bui-accordion-image {
+    padding-right: 8px;
+} -->
+
+</pre> </code>
+<div class="bui-accordion-formclass">
+    <h2>Sample</h2>               
+        <form>            
+            <div>                
+                <div class="bui-accordion-container">
+                    <input type="checkbox" class="bui-accordion-checkbox" id="bui-accordion-chk-icon1">
+                    <label for="bui-accordion-chk-icon1" class="bui-accordion-label-icon">
+                        <img class="bui-accordion-image" src="Icon/Dummy Icon.svg">Group 1
+                        <div class="bui-accordion-arrow-position">
+                            <img class="bui-accordion-arrow" src="Icon/Group_1802.svg"/>
+                        </div>
+                    </label>
+                    <div class="bui-accordion-panel-icon"> </div>
+                </div>
+        
+                <div class="bui-accordion-container">
+                    <input type="checkbox" class="bui-accordion-checkbox" id="bui-accordion-chk-icon2">
+                    <label for="bui-accordion-chk-icon2" class="bui-accordion-label-icon">
+                        <img class="bui-accordion-image" src="Icon/Dummy Icon.svg">Group 2
+                        <div class="bui-accordion-arrow-position">
+                            <img class="bui-accordion-arrow" src="Icon/Group_1802.svg"/>
+                        </div>
+                    </label>
+                    <div class="bui-accordion-panel-icon"> </div>
+                </div>
+        
+                <div class="bui-accordion-container">
+                    <input type="checkbox" class="bui-accordion-checkbox" id="bui-accordion-chk-icon3">
+                    <label for="bui-accordion-chk-icon3" class="bui-accordion-label-icon">
+                        <img class="bui-accordion-image" src="Icon/Dummy Icon.svg">Group 3
+                        <div class="bui-accordion-arrow-position">
+                            <img class="bui-accordion-arrow" src="Icon/Group_1802.svg"/>
+                        </diV>
+                    </label>
+                    <div class="bui-accordion-panel-icon"> </div>
+                </div>
+            </div>
+        </form>   
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+            
+<div>
+    <h2>CSS Properties</h2>
+    <table class="bui-accordion-table">
+        <tr>
+            <th class="bui-accordion-th">Attributes</th>
+            <th class="bui-accordion-th">Description</th>
+            <th class="bui-accordion-th">Default Value</th>
+        </tr>
+        <tr>
+            <td class="bui-accordion-td">Background color</td>
+            <td class="bui-accordion-td">The background color of all the  Container </td>
+            <td class="bui-accordion-td">#FFFFFF </td>
+        </tr>
+        <tr>
+            <td class="bui-accordion-td">Label Font</td>
+            <td class="bui-accordion-td">The font family of the label</td>
+            <td class="bui-accordion-td">Helvetica Neue Regular</td>
+        </tr>
+        <tr>
+            <td class="bui-accordion-td">Label size</td>
+            <td class="bui-accordion-td">The font size of the label</td>
+            <td class="bui-accordion-td">14px</td>
+        </tr>
+        <tr>
+            <td class="bui-accordion-td">Label text color</td>
+            <td class="bui-accordion-td">The label color  </td>
+            <td class="bui-accordion-td">#55565A</td>
+        </tr>
+        <tr>
+            <td class="bui-accordion-td"> Hover</td>
+            <td class="bui-accordion-td">On hovering the mouse over the Container, the color changes to Extra Light Gray.</td>
+            <td class="bui-accordion-td">#F0F0F1 </td>
+        </tr>
+        <tr>
+            <td class="bui-accordion-td">Drop Shadow</td>
+            <td class="bui-accordion-td"> Opacity: 20%; X Offset: 1 px; Y Offset: 1 px, Blur: 2px, Color: Rich Black #000000. </td>
+            <td class="bui-accordion-td">box-shadow: 1px 1px 2px rgba(0,0,0,0.2) </td>
+        </tr>
+        <tr>
+            <td class="bui-accordion-td">Cascading menu indicator</td>
+            <td class="bui-accordion-td">On click of container, the indicator icon rotates.</td>
+            <td class="bui-accordion-td">transform:rotate(180deg)</td>
+        </tr>
+    </table>
+</div>
+
+
+<script>
+    function openType(buiAccordionName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("bui-accordion-type-content");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("bui-tablink-button");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(buiAccordionName).style.display = "block";
+    }
+    document.getElementById("default").click();
+</script>
+
+    </body>
+</html>

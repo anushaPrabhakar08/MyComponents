@@ -1,0 +1,174 @@
+.bui-radiobutton-body,.bui-radiobutton-disabledlabel,.bui-radiobutton-preclass {
+ color:  #55565A ;
+ font-family: Helvetica;
+}
+
+.bui-radiobutton-codebox, .bui-radiobutton-Description{
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.bui-radiobutton-formclass {
+	padding-left: 20px;
+	min-height: 400px;
+	overflow: auto;
+  min-width: 40%;
+}
+.bui-radiobutton {
+    margin-right: 30px;
+    float: left;
+    height: auto;
+    width: auto;
+    background-color: #fafafb;
+    padding: 12px 20px;
+}
+
+.bui-radiobutton-preclass, .bui-radiobutton-code{
+    font-size: 0.9rem;
+}
+.bui-radiobutton-code { 
+  overflow: auto;
+  height: 200px;
+  background-color: #F0F0F1;
+  margin-right: 50px;
+  min-height: 400px;
+  min-width: 50%;
+  padding-left: 20px;
+  color: #00568F;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border:none;
+}
+.bui-radiobutton-container{
+  padding-bottom: 5px;
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.bui-radiobutton-span{
+  position: relative;
+  top: 3px;
+}
+.bui-radiobutton-Description{
+    justify-content: space-evenly;
+}
+.bui-radiobutton-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .bui-radiobutton-select, .bui-radiobutton-selectdisabled{
+    margin-bottom: 12px;
+    margin-right: 10px;
+    border: 1px solid #CAC9C7; 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF ;
+    border-radius: 50%;
+  }
+
+  .bui-radiobutton-selectdisabled {
+    border:1px solid #CAC9C7;
+  }
+  
+.bui-radiobutton-container:hover input ~ .bui-radiobutton-select {
+    border: 1px solid #0569A3;
+  }
+  
+  .bui-radiobutton-container input:checked ~ .bui-radiobutton-select {
+      border: 1px solid #00568F; 
+      background-color: white;
+  }
+  
+  .bui-radiobutton-container input:checked ~ .bui-radiobutton-select:after {
+    display: block;
+    color:  #00568F;
+  }
+  
+  .bui-radiobutton-container .bui-radiobutton-select:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 5px;
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #00568F;
+  }
+  .bui-radiobutton-disabledlabel{
+      opacity: 0.3;
+  }
+  .bui-radiobutton-disabled {
+    border: 1px solid #CAC9C7 ;
+  }
+.bui-radiobutton-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.bui-radiobutton-th,.bui-radiobutton-td{
+  border-bottom: 2px solid #ddd;
+    text-align: left;
+    font-size: 0.875rem;
+    padding: 14px;
+}
+.bui-radiobutton-th {
+  background-color: #F0F0F1;
+  font-size: 1.1rem;
+}
+.bui-radiobutton-label{
+  margin-bottom: 16px;
+}
+
+
+/* tab styles*/
+.bui-tablink-button{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  height: 32px;
+  padding: 10px 14px;
+  float: right;
+  cursor: pointer;
+}
+.tablink {
+  background-color: #555;
+  float: left;
+  cursor: pointer;
+  font-size: 17px;
+  width: 25%;
+}
+
+.bui-tablink-button:hover{
+  border-bottom: 2px solid gray;
+}
+.bui-tablink-button:focus{
+background-color: #8eaec3;
+}
+
+
+/* @media only screen and (max-width: 768px) {
+  /* For mobile phones: 
+  [class="bui-button-type-content"],
+  [class="bui-radiobutton-codebox"]{
+      width: 100%;
+  }
+  [class="abc"]{
+      display: block !important;
+      width: 100%;
+  }
+  [class="bui-btn-sample"]{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 0.625rem;
+      align-items: center;
+  }
+} */

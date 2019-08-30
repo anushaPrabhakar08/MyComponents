@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../TABS/Tabs.css">
+</head>
+
+<body class="bui-tabs-body" onload="openType('Tabs')">
+    <h1>Tabs</h1>
+    <pre >Tabs display all tabs on one screen, with each tab at a fixed width. The width of each tab is determined by dividing the
+                number of tabs by the screen width.
+        </pre>
+    <button class="bui-tablink-button" onclick="openType('Tabs')" id="default">Tabs</button>
+    <button class="bui-tablink-button" onclick="openType('Tabs1')">Tabs on active</button>
+    <button class="bui-tablink-button" onclick="openType('Tabs2')">Tabs with Icon</button>
+    <button class="bui-tablink-button" onclick="openType('Tabs3')">Tabs with Scroller</button>
+
+    <script>
+        function openType(buiTabsName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("bui-tabs-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("bui-tablink-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(buiTabsName).style.display = "block";
+        }
+        document.getElementById("default").click();
+    </script>
+
+
+    <div class="bui-tabs-content" id="Tabs">
+        <div class="bui-code-box">
+            <h1>Tabs on hovering state</h1>
+            <hr>
+            <div class="bui-tabs-codebox">
+                <code>
+                    <pre class="bui-tabs-code">
+                        .bui-tabs-button {
+                            cursor: pointer;
+                            display: inline-block;
+                            text-align: center;
+                            border: none;
+                            padding: 10px;
+                            margin: -2px;
+                            font-family: Helvetica Neue Regular;
+                            font-size: 14px;
+                            outline: none;
+                            height: 48px;
+                            padding: 4px 32px 0px 32px;
+                            background-color: white;
+                            border-bottom: 1px solid #DEDFE0;
+                        }
+                        .bui-tabs .bui-tabs-button:hover {
+                            border-bottom: 2px solid #00568F;
+                            color: #00568F;
+                        }
+                        .bui-tabs-button:hover {
+                            color: #00568F;
+                        }
+                    </pre>
+                    </code>
+                <div class="bui-tabs-class">
+                    <h2>Sample</h2>
+                    <div class="bui-tabs">
+                        <button class="bui-tabs-button">Label one</button>
+                        <button class="bui-tabs-button">Label Two</button>
+                        <button class="bui-tabs-button">Label Three</button>
+                        <button class="bui-tabs-button">Label Four</button>
+                        <button class="bui-tabs-button">Label Five</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bui-tabs-content" id="Tabs1">
+        <div class="bui-code-box">
+            <h1 class="bui-heading-h1">Tabs on active state</h1>
+            <hr>
+            <div class="bui-tabs-codebox">
+                    <code>
+                            <pre class="bui-tabs-code">
+                                    .bui-tabs-button {
+                                        cursor: pointer;
+                                        display: inline-block;
+                                        text-align: center;
+                                        border: none;
+                                        padding: 10px;
+                                        margin: -2px;
+                                        font-family: Helvetica Neue Regular;
+                                        font-size: 14px;
+                                        outline: none;
+                                        height: 48px;
+                                        padding: 4px 32px 0px 32px;
+                                        background-color: white;
+                                        border-bottom: 1px solid #DEDFE0;
+                                    }
+                                    .bui-tabs .bui-tabs-button:hover {
+                                        border-bottom: 2px solid #00568F;
+                                        color: #00568F;
+                                    }
+                                    .bui-tabs-button:hover {
+                                        color: #00568F;
+                                    }
+                            </pre>
+                        </code>
+                <div class="bui-tabs-class">
+                    <h2>Sample</h2>
+                    <div class="bui-tabs-2">
+                        <button class="bui-tabs-button">Label one</button>
+                        <button class="bui-tabs-button">Label Two</button>
+                        <button class="bui-tabs-button">Label Three</button>
+                        <button class="bui-tabs-button">Label Four</button>
+                        <button class="bui-tabs-button">Label Five</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bui-tabs-content" id="Tabs2">
+        <div class="bui-code-box">
+            <h1 class="bui-heading-h1">Tabs with Icon</h1>
+            <hr>
+            <div class="bui-tabs-codebox">
+                <code>
+                <pre class="bui-tabs-code">
+                        .bui-tabs-button {
+                            cursor: pointer;
+                            display: inline-block;
+                            text-align: center;
+                            border: none;
+                            padding: 10px;
+                            margin: -2px;
+                            font-family: Helvetica Neue Regular;
+                            font-size: 14px;
+                            outline: none;
+                            height: 48px;
+                            padding: 4px 32px 0px 32px;
+                            background-color: white;
+                            border-bottom: 1px solid #DEDFE0;
+                        }
+                        
+                        
+                        .bui-tabs-3 .bui-tabs-button:hover,
+                        .bui-tabs-3 .bui-tabs-button:focus {
+                            border-bottom: 2px solid #00568F;
+                            color: #00568F;
+                        }
+                        
+                        .bui-tabs-3 .bui-tabs-button:hover,
+                        .bui-tabs-3 .bui-tabs-button:focus {
+                            filter:grayscale(0);
+                        }
+                        .bui-tabs-button:hover {
+                            color: #00568F;
+                        }
+                        
+                        .bui-tabs-icon {
+                            position: relative;
+                            top: -15px;
+                            left: 35px;
+                            padding: 12px 0px 12px 0px;
+                        }
+                        
+                        .bui-tabs-3 .bui-tabs-button { 
+                            width: 120px;
+                            filter: grayscale(1);
+                            height: 72px;
+                            padding: 0px 8px 0px 8px;
+                        }
+                </pre>
+                    </code>
+                <div class="bui-tabs-class">
+                    <h2>Sample</h2>
+                    <div class="bui-tabs-3">
+                        <button class="bui-tabs-button"> <img src="../Dummy Icon.svg" class="bui-tabs-icon"
+                                alt="icon">Label
+                            one</button>
+                        <button class="bui-tabs-button"> <img src="../Dummy Icon.svg" class="bui-tabs-icon"
+                                alt="icon">Label
+                            Two</button>
+                        <button class="bui-tabs-button"> <img src="../Dummy Icon.svg" class="bui-tabs-icon"
+                                alt="icon">Label
+                            Three</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bui-tabs-content" id="Tabs3">
+            <div class="bui-code-box">
+                <h1 class="bui-heading-h1">Tabs with scroller</h1>
+                <hr>
+                <div class="bui-tabs-codebox">
+                    <code>
+                    <pre class="bui-tabs-code">
+                        .bui-tabs-button {
+                            cursor: pointer;
+                            display: inline-block;
+                            text-align: center;
+                            border: none;
+                            padding: 10px;
+                            margin: -2px;
+                            font-family: Helvetica Neue Regular;
+                            font-size: 14px;
+                            outline: none;
+                            height: 48px;
+                            padding: 4px 32px 0px 32px;
+                            background-color: white;
+                            border-bottom: 1px solid #DEDFE0;
+                        }
+                        .bui-tabs-4 .bui-tabs-button:hover,
+                        .bui-tabs-4 .bui-tabs-button:focus {
+                            border-bottom: 2px solid #00568F;
+                            color: #00568F;
+                        }
+                        .bui-tabs-button:hover {
+                            color: #00568F;
+                        }
+                        .slideshow-container {
+                            max-width: 1000px;
+                            position: relative;
+                            margin: auto;
+                        }
+                        .bui-tabs-prev,
+                        .bui-tabs-next {
+                            cursor: pointer;
+                            position: absolute;
+                            top: 50%;
+                            width: auto;
+                            padding: 16px 16px 16px 0px;
+                            margin-top: -22px;
+                            color: black;
+                            font-weight: bold;
+                            font-size: 18px;
+                        }
+                        .bui-tabs-next {
+                            right: 0;
+                        }
+                        .bui-tabs-prev:hover,
+                        .bui-tabs-next:hover {
+                            background-color: #f1f1f1;
+                            color:#00568F ;
+                        }
+                    </pre>
+                        </code>
+                    <div class="bui-tabs-class">
+                        <h2>Sample</h2>
+                        <div class="slideshow-container">
+                                <div class="bui-tabs-4">
+                                    <button class="bui-tabs-button">label one </button>
+                                    <button class="bui-tabs-button">label two </button>
+                                    <button class="bui-tabs-button">label three </button>
+                                    <button class="bui-tabs-button">label four </button>
+                                    <button class="bui-tabs-button">label five </button>
+                                    <button class="bui-tabs-button">label six </button>
+                                    <button class="bui-tabs-button">label seven </button>
+                                    <button class="bui-tabs-button">label eight </button>
+                                </div>
+                        
+                                <a class="bui-tabs-prev" >&#10094;</a>
+                                <a class="bui-tabs-next" >&#10095;</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div>
+        <h2>CSS Properties</h2>
+        <table class="bui-tabs-table">
+            <tr>
+                <th class="bui-tabs-th">Attributes</th>
+                <th class="bui-tabs-th">Description</th>
+                <th class="bui-tabs-th">Default Value</th>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Background color</td>
+                <td class="bui-tabs-td">The background color of all the  buttons </td>
+                <td class="bui-tabs-td">#FFFFFF</td>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Label Font</td>
+                <td class="bui-tabs-td">The font family of the label</td>
+                <td class="bui-tabs-td">Helvetica Neue Regular</td>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Label size</td>
+                <td class="bui-tabs-td">The font size of the label</td>
+                <td class="bui-tabs-td">14px</td>
+            </tr>
+
+            <tr>
+                <td class="bui-tabs-td"> Stroke</td>
+                <td class="bui-tabs-td">1px solid </td>
+                <td class="bui-tabs-td">#DEDFE0 </td>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Tab</td>
+                <td class="bui-tabs-td">on hover the border bottom and label color changes </td>
+                <td class="bui-tabs-td">#0569A3 </td>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Tab</td>
+                <td class="bui-tabs-td">on Active the border bottom and label color changes </td>
+                <td class="bui-tabs-td">#0569A3 </td>
+            </tr>
+
+
+        </table>
+    </div>
+  
+
+
+    <!-- </div> -->
+</body>
+
+</html>

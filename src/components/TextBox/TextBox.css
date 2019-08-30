@@ -1,0 +1,199 @@
+.bui-textbox-input-filled,
+.bui-textbox-input-outlined,
+.bui-textbox-input-filled-icon,
+.bui-textbox-input-outlined-icon
+{
+	padding:0px 12px;
+	font-size:14px;
+	color: #55565A;
+	background:#FFFFFF;
+	outline:none;
+    display:inline-block;
+    height:32px;
+	border-radius:4px;
+    border:1px solid #CAC9C7;   
+    width: 185px;
+    padding-right: 32px;
+}
+
+.bui-textbox-input-filled-icon,
+.bui-textbox-input-outlined-icon
+{
+    padding-left:32px;
+    padding-right:12px;
+}
+.bui-textbox-input-outlined,
+.bui-textbox-textarea-outlined,
+.bui-textbox-input-outlined-icon{
+    /* height: 32px; */
+	border-style:none none solid none;
+	border-color:#CAC9C7;
+	padding-top: 4px;
+    padding-bottom: 8px;
+    border-radius: 0%;
+	border-bottom-width: 1px;
+}
+
+.bui-textbox-textarea-filled,
+.bui-textbox-textarea-outlined{
+    outline: none;
+
+}
+
+.bui-textbox-label-variances,
+.bui-textbox-label-disabled,
+.bui-textbox-label-error{
+	font-size:12px;
+	color: #ABABAB;
+	display:inline-block;
+    height: 0px;
+}
+
+
+/* .bui-textbox-filled-pressed:focus + .bui-textbox-label-pressed,.bui-textbox-outlined-pressed:focus + .bui-textbox-label-pressed
+{
+   color:#00568F;
+} */
+
+.bui-textbox-filled-variances:hover,
+.bui-textbox-outlined-variances:hover,
+.bui-textbox-textarea-filled-variances:hover,
+.bui-textbox-textarea-outlined-variances:hover,
+.bui-textbox-filled-icon-variances:hover,.bui-textbox-outlined-icon-variances:hover{
+    border-color: #434655;
+}
+
+.bui-textbox,.bui-textbox-textarea-filled,.bui-textbox-textarea-outlined{
+    width:10%;
+    height: 84px;
+    margin-left:10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.bui-textbox-textarea-filled,.bui-textbox-textarea-outlined{
+    height: 50px;
+    width: 190px;
+    margin-left:0px;
+    margin-top: 9px;
+}
+/* .bui-textbox-textarea-outlined{
+    outline:none;
+    border-bottom:1px solid red;
+} */
+
+
+.bui-textbox-filled-variances:focus,
+.bui-textbox-outlined-variances:focus,
+.bui-textbox-textarea-filled-variances:focus,
+.bui-textbox-textarea-outlined-variances:focus,
+.bui-textbox-filled-icon-variances:focus,.bui-textbox-outlined-icon-variances:focus{
+    border-color:#00568F;
+}
+
+.bui-textbox-filled-disabled,
+.bui-textbox-label-disabled,
+.bui-textbox-outlined-disabled,
+.bui-textbox-textarea-outlined-disabled,
+.bui-textbox-textarea-filled-disabled,
+.bui-textbox-filled-icon-disabled,
+.bui-textbox-outlined-icon-disabled,
+.disabled{
+    opacity:0.3;
+    user-select: none;
+    pointer-events: none; 
+}
+
+.bui-textbox-filled-error,
+.bui-textbox-label-error,
+.bui-textbox-outlined-error,
+.bui-textbox-textarea-outlined-error,
+.bui-textbox-textarea-filled-error,
+.bui-textbox-filled-icon-error,
+.bui-textbox-outlined-icon-error
+{
+    border-color:#C62828;
+    color:#C62828;    
+}
+
+.bui-textbox-filled-icon,
+.bui-textbox-outlined-icon{
+    background: url(../../assets/images/search.svg) no-repeat; 
+    position: relative;
+    height: 24px;
+    width: 24px;
+    right: 30px;
+    top: 4px;
+    /* position: relative;
+		right: 40px;
+		top: 4px;
+		width: 16px;
+		padding-left: 8px;
+		padding-right: 12px; */
+}
+
+.bui-textbox-outlined-icon-iconsign,
+.bui-textbox-filled-icon-iconsign{
+    background: url(../../assets/images/search.svg) no-repeat; 
+    position: relative;
+    height: 24px;
+    width: 24px;
+    right: 180px;
+    top: 5px;
+    
+}
+
+.bui-textbox-formclass{
+	padding-left: 20px;
+	min-height: 250px;
+    min-width: 40%;
+}
+
+.bui-textbox-div{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.bui-textbox-variances:focus-within .bui-textbox-label-variances{
+    color:#00568F;
+}
+
+
+.bui-Main-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:400px;
+}
+
+.bui-span-label-required{
+    color:#C62828;
+}
+.bui-span-label-input,.bui-span-label-textarea,.bui-span-label-helper,.bui-span-label-charcount,.bui-span-label-iconsign{
+display: none !important;
+}
+.bui-textbox-filled-help,.bui-textbox-outlined-help{
+    background: url(../../assets/images/search.svg) no-repeat; 
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+} 
+
+.bui-labelsize,.bui-labelsize-count{
+    font-size:12px;
+    font-family:Helvetica;
+    color: #ABABAB;
+}
+
+.bui-labelsize-count{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.bui-App-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around   ;
+}

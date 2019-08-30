@@ -1,0 +1,118 @@
+.bui-tooltip .bui-tooltiptext {
+  visibility: hidden;
+  width: 104px;
+  background-color: #000000;
+  color: #fff;
+  font-family: Helvetica Neue Regular;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  /* padding: 8px 0; */
+  margin: 8px 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 20px;
+  padding-top: 4px;
+  /* Position the tooltip */
+  position: absolute;
+  opacity: 0.5;
+}
+
+.bui-tooltip:hover .bui-tooltiptext {
+  visibility: visible;
+}
+.bui-tooltip-image,.bui-tooltip-upload{
+
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-bottom: 18px;
+margin-left: 45px;
+cursor: pointer;
+
+}
+
+.bui-tooltip-upload{
+    width:24px;
+    opacity: 0.5;
+}
+
+.bui-tooltip-container{
+display:block;
+width: 50%;
+box-shadow:none;
+}
+
+.bui-tooltip-formclass{
+	padding-left: 20px;
+	min-height: 250px;
+    min-width: 40%;
+}
+
+
+.bui-tooltip-codeboccontainer{
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.bui-tooltip-code {
+	width: 45rem;
+    overflow: auto;
+    height: 30rem;
+    background-color: #F0F0F1;
+    margin-right: 50px;
+    padding-left: 20px;
+    color: #00568F;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: none;
+}
+
+.bui-tooltip-preclass{
+    font-family: Helvetica;
+    font-size: 0.9rem;
+}
+
+
+
+.bui-tablink-button{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  height: 32px;
+  padding: 10px 14px;
+  float: right;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.bui-tablink-button:hover{
+  border-bottom: 2px solid gray;
+}
+.bui-tablink-button:focus{
+background-color: #8eaec3;
+}
+    
+
+ 
+.bui-tooltip-table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+
+.bui-tooltip-th,.bui-tooltip-td{
+  border-bottom: 2px solid #ddd;
+  font-family: Helvetica;
+  text-align: left;
+  font-size: 0.875rem;
+  padding: 14px;
+}
+
+.bui-tooltip-code,.bui-tooltip-th{
+  background-color: #F0F0F1;
+  font-size: 1.1rem;
+ 
+}

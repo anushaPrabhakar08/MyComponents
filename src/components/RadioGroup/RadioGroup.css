@@ -1,0 +1,9 @@
+.radioVertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.radioHorizontal {
+  display: flex;
+  flex-direction: row;
+}

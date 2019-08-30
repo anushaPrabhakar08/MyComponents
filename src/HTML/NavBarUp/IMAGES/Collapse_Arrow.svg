@@ -1,0 +1,15 @@
+<svg id="Sidebar_Collapse_icon" data-name="Sidebar Collapse icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_393" data-name="Rectangle 393" width="12" height="12" transform="translate(6 6)" fill="none"/>
+  <rect id="Rectangle_394" data-name="Rectangle 394" width="12" height="11.307" transform="translate(6 6.346)" fill="none"/>
+  <g id="Group_559" data-name="Group 559" transform="translate(6.001 6.346)">
+    <g id="Group_558" data-name="Group 558">
+      <path id="Path_313" data-name="Path 313" d="M1944.548,1644.289a.555.555,0,0,0-.785-.784l-.008.008c-.209.2-.413.413-.619.62l-1.274,1.273-1.473,1.473-1.219,1.219-.51.51a.564.564,0,0,0,0,.785l.008.008c.2.209.413.413.619.619l1.274,1.274,1.473,1.473,1.219,1.219.51.51a.555.555,0,0,0,.785-.784l-.009-.008c-.2-.21-.413-.413-.619-.62l-1.274-1.273-1.473-1.473-1.219-1.22-.51-.51v.785l.008-.009c.211-.2.413-.413.62-.619l1.273-1.273,1.473-1.473,1.22-1.22.51-.51Z" transform="translate(-1938.501 -1643.346)" fill="#78a8c7"/>
+    </g>
+  </g>
+  <g id="Group_561" data-name="Group 561" transform="translate(11.793 6.346)">
+    <g id="Group_560" data-name="Group 560">
+      <path id="Path_314" data-name="Path 314" d="M1950.34,1644.289a.555.555,0,0,0-.785-.784l-.008.008c-.209.2-.413.413-.619.62l-1.274,1.273-1.473,1.473-1.219,1.219-.51.51a.564.564,0,0,0,0,.785l.008.008c.2.209.413.413.62.619l1.273,1.274,1.473,1.473,1.219,1.219.51.51a.555.555,0,0,0,.785-.784l-.009-.008c-.2-.21-.413-.413-.619-.62l-1.273-1.273-1.473-1.473-1.22-1.22-.51-.51v.785l.009-.009c.21-.2.412-.413.619-.619l1.273-1.273,1.473-1.473,1.22-1.22.51-.51Z" transform="translate(-1944.293 -1643.346)" fill="#78a8c7"/>
+    </g>
+  </g>
+  <rect id="Rectangle_692" data-name="Rectangle 692" width="24" height="24" fill="none"/>
+</svg>

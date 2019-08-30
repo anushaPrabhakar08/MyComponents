@@ -1,0 +1,345 @@
+<html>
+<head>  
+    <title>CHECKBOX UI</title>
+    <style>
+        
+    </style>
+        <!-------TO LINK THE STYLES FOR THE CONTAINER--------->
+    <link rel="stylesheet" type="text/css" href="./container.css">
+
+        <!-------TO LINK THE STYLES FOR THE CHECKBOX--------->
+    <link rel="stylesheet" type="text/css" href="./checkbox.css">
+    
+
+</head>
+<body>
+    <div class="bui-container">
+        <div class="bui-header-box">                
+            <h1 class="bui-heading-h1">Selection Control</h1>
+            <p>Selection controls allow users to select options. Selection controls allow users to complete tasks that involve making choices such as selecting options or switching settings on or off. Selection controls are found on screens that ask users to make decisions or declare preferences such as settings or dialogs.
+            </p>
+        </div>
+        <hr>
+        <h1 class="bui-heading-h1">Checkbox</h1>
+        <button class="bui-tablink-button" onclick="openType('check-text')">Text</button>
+        <button class="bui-tablink-button" onclick="openType('group')">Group</button>
+        <button class="bui-tablink-button" onclick="openType('single')" id="default">Single</button>    
+        
+        <div class="bui-context-box bui-button-type-content"id="single">  
+            <h2 class="bui-heading-h3">Single Checkbox</h2>
+            <hr>
+            <h2  class="bui-heading-h2 sample-h2">Sample</h2>
+            <div class="bui-sample-box">
+                <div class="bui-btn-box">
+                    <div>
+                        <label class="bui-label">NORMAL</label>
+                        <label class="bui-checkbox-container">Label
+                            <input type="checkbox">
+                            <span class="bui-checkbox-checkmark"></span>
+                        </label>
+                    
+                        <label class="bui-label">DISABLED</label>
+                        <label class="bui-checkbox-container bui-checkbox-disabled ">Label
+                            <input type="checkbox" disabled>
+                            <span class="bui-checkbox-checkmark bui-checkmark-disabled"></span>
+                        </label>  
+                    </div>
+                </div>
+                
+                <hr class="abc">
+                <div class="bui-code-box">
+                    <textarea class="bui-code-textarea" readonly>
+            /*-----Hide the default checkbox-----*/
+            .bui-checkbox-container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+        
+        /*-----Creating the custom checkbox-----*/
+            .bui-checkbox-checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                border-radius: 4px;
+                border: 1px solid #CAC9C7;
+                background-color: #FFFFFF;
+            }
+            
+            .bui-checkbox-checkmark:hover{
+                border:1px solid#0569A3 ;
+            }
+            /* When the checkbox is checked, add a blue background */
+            .bui-checkbox-container input:checked~.bui-checkbox-checkmark{
+                background: #00568F;
+                border:1px solid#00568F;
+            }
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .bui-checkbox-checkmark:after{
+                content: "";
+                position: absolute;
+                display: none;
+            }
+        
+            /* Show the checkmark when checked */
+            .bui-checkbox-container input:checked~.bui-checkbox-checkmark:after{
+                display: block;
+            }
+            .bui-checkbox-checkmark:after{
+                border:solid #ffffff;
+                top:2px;
+                left:6px;
+                width: 5px;
+                height: 10px;
+                border-width: 0 3px 3px 0;
+                transform: rotate(40deg);
+                border-radius:2px; 
+            }
+            /*---- disabled checkbox----*/
+            .bui-checkbox-disabled{
+                opacity: 0.3;
+            }
+                    </textarea>
+                </div>
+            </div>  
+        </div>
+        <div class="bui-context-box bui-button-type-content"id="group">  
+            <h2 class="bui-heading-h3">Group Checkbox</h2>
+            <hr> 
+            <h2  class="bui-heading-h2 sample-h2">Sample</h2>
+            <div class="bui-sample-box">
+                <div class=" bui-btn-box">
+                    <div>
+                        <label class="bui-label">Title of items</label>
+                        <label class="bui-checkbox-container"><span>Label</span>
+                            <input type="checkbox">
+                            <span class="bui-checkbox-checkmark"></span>
+                        </label>
+                        <label class="bui-checkbox-container">Label
+                            <input type="checkbox">
+                            <span class="bui-checkbox-checkmark"></span>
+                        </label>
+                        <label class="bui-checkbox-container">Label
+                            <input type="checkbox">
+                            <span class="bui-checkbox-checkmark"></span>
+                        </label>
+                        <label class="bui-checkbox-container">Label
+                            <input type="checkbox">
+                            <span class="bui-checkbox-checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            
+                <hr class="abc">
+                <div class="bui-code-box">
+                    <textarea class="bui-code-textarea" readonly>
+            /*-----Hide the default checkbox-----*/
+            .bui-checkbox-container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+        
+        /*-----Creating the custom checkbox-----*/
+            .bui-checkbox-checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                border-radius: 4px;
+                border: 1px solid #CAC9C7;
+                background-color: #FFFFFF;
+            }
+            
+            .bui-checkbox-checkmark:hover{
+                border:1px solid#0569A3 ;
+            }
+            /* When the checkbox is checked, add a blue background */
+            .bui-checkbox-container input:checked~.bui-checkbox-checkmark{
+                background: #00568F;
+                border:1px solid#00568F;
+            }
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .bui-checkbox-checkmark:after{
+                content: "";
+                position: absolute;
+                display: none;
+            }
+        
+            /* Show the checkmark when checked */
+            .bui-checkbox-container input:checked~.bui-checkbox-checkmark:after{
+                display: block;
+            }
+            .bui-checkbox-checkmark:after{
+                border:solid #ffffff;
+                top:2px;
+                left:6px;
+                width: 5px;
+                height: 10px;
+                border-width: 0 3px 3px 0;
+                transform: rotate(40deg);
+                border-radius:2px; 
+            }
+            /*---- disabled checkbox----*/
+            .bui-checkbox-disabled{
+                opacity: 0.3;
+            }
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="bui-context-box bui-button-type-content"id="check-text">   
+            <h2 class="bui-heading-h3">Single Checkbox with Text</h2>
+            <hr>
+            <h2  class="bui-heading-h2 sample-h2">Sample</h2>
+            <div class="bui-sample-box">
+               <div class="bui-btn-box">
+                    <div>
+                        <label class="bui-checkbox-container"><span>I agree to the Privacy Policy <br>and Terms & Conditions</span>
+                            <input type="checkbox">
+                            <span class="bui-checkbox-checkmark"></span>
+                        </label>
+                    </div>                    
+                </div>
+                <hr class="abc">
+                <div class="bui-code-box">
+                    <textarea class="bui-code-textarea" readonly>
+            /*-----Hide the default checkbox-----*/
+            .bui-checkbox-container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+        
+        /*-----Creating the custom checkbox-----*/
+            .bui-checkbox-checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                border-radius: 4px;
+                border: 1px solid #CAC9C7;
+                background-color: #FFFFFF;
+            }
+            
+            .bui-checkbox-checkmark:hover{
+                border:1px solid#0569A3 ;
+            }
+            /* When the checkbox is checked, add a blue background */
+            .bui-checkbox-container input:checked~.bui-checkbox-checkmark{
+                background: #00568F;
+                border:1px solid#00568F;
+            }
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .bui-checkbox-checkmark:after{
+                content: "";
+                position: absolute;
+                display: none;
+            }
+        
+            /* Show the checkmark when checked */
+            .bui-checkbox-container input:checked~.bui-checkbox-checkmark:after{
+                display: block;
+            }
+            .bui-checkbox-checkmark:after{
+                border:solid #ffffff;
+                top:2px;
+                left:6px;
+                width: 5px;
+                height: 10px;
+                border-width: 0 3px 3px 0;
+                transform: rotate(40deg);
+                border-radius:2px; 
+            }
+            /*---- disabled checkbox----*/
+            .bui-checkbox-disabled{
+                opacity: 0.3;
+            }
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <hr>     
+        <div class="bui-properties-box">
+            <h2  class="bui-heading-h2">CSS Properties</h2>
+            <table class="bui-properties-table">
+                <tr>
+                    <th class="bui-table-header">Attributes</th>
+                    <th  class="bui-table-header">Description</th>
+                    <th  class="bui-table-header">Default Value</th>
+                </tr>
+                <tr>
+                    <td class="bui-table-details">Color</td>
+                    <td class="bui-table-details">The text color for Label is Light Gray</td>
+                    <td class="bui-table-details">#55565A</td>                        
+                </tr>
+                <tr>
+                    <td class="bui-table-details">Background Color</td>
+                    <td class="bui-table-details">The background color is White</td>
+                    <td class="bui-table-details">#FFFFFF</td>                        
+                </tr>
+                <tr>
+                    <td class="bui-table-details">Font-Family</td>
+                    <td class="bui-table-details">The font family is Helavtica Neue Regular </td>
+                    <td class="bui-table-details">Helvatica Neue Regular </td>                        
+                </tr>
+                <tr>
+                    <td class="bui-table-details">Font-Weight</td>
+                    <td class="bui-table-details">The font size or font weight is 14px.</td>
+                    <td class="bui-table-details">0.875rem</td>                        
+                </tr>
+                <tr>
+                    <td class="bui-table-details">Hover</td>
+                    <td class="bui-table-details">The border color changes from Light Gray to Blue</td>
+                    <td class="bui-table-details"> #0569A3 </td>                        
+                </tr>
+                <tr>
+                    <td class="bui-table-details">Pressed</td>
+                    <td class="bui-table-details">The background color changes from White to Blue </td>
+                    <td class="bui-table-details">#55565A</td>                        
+                </tr>
+                <tr>
+                    <td class="bui-table-details">Icon</td>
+                    <td class="bui-table-details">Checkbox pressed Icon or Checkmark color is White</td>
+                    <td class="bui-table-details">#FFFFFF</td>
+                                                
+                </tr>
+                <tr>
+                    <td class="bui-table-details">Disable</td>
+                    <td class="bui-table-details">Disable property makes the checkbox Opacity to 30%</td>
+                    <td class="bui-table-details"> 0.3 </td>                        
+                </tr>
+            </table>
+
+        </div>
+        <br>
+       
+    </div>
+    <script>
+            function openType(tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("bui-button-type-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("bui-tablink-button");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+              document.getElementById("default").click();
+            </script>
+</body>
+</html>

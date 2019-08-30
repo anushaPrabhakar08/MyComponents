@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_1012" data-name="Group 1012" transform="translate(-15 -77)">
+    <g id="noun_brightness_1333900" transform="translate(16.2 69.2)">
+      <g id="Group_829" data-name="Group 829" transform="translate(2.8 11.8)">
+        <path id="Path_423" data-name="Path 423" d="M32.683,27a3.692,3.692,0,1,0,3.7,3.683A3.685,3.685,0,0,0,32.683,27Zm2.8,3.7a2.827,2.827,0,0,1-2.55,2.767v-5.55A2.831,2.831,0,0,1,35.483,30.7Z" transform="translate(-24.667 -22.667)" fill="#78a8c7"/>
+        <rect id="Rectangle_618" data-name="Rectangle 618" width="0.9" height="3.1" transform="translate(7.567 12.9)" fill="#78a8c7"/>
+        <rect id="Rectangle_619" data-name="Rectangle 619" width="0.9" height="3.1" transform="translate(7.567)" fill="#78a8c7"/>
+        <rect id="Rectangle_620" data-name="Rectangle 620" width="3.1" height="0.9" transform="translate(0 7.567)" fill="#78a8c7"/>
+        <rect id="Rectangle_621" data-name="Rectangle 621" width="3.1" height="0.9" transform="translate(12.9 7.567)" fill="#78a8c7"/>
+        <rect id="Rectangle_622" data-name="Rectangle 622" width="0.9" height="3.1" transform="translate(4.216 11.132) rotate(45)" fill="#78a8c7"/>
+        <rect id="Rectangle_623" data-name="Rectangle 623" width="0.9" height="3.1" transform="matrix(-0.707, -0.707, 0.707, -0.707, 11.794, 4.878)" fill="#78a8c7"/>
+        <rect id="Rectangle_624" data-name="Rectangle 624" width="3.1" height="0.9" transform="translate(4.241 4.864) rotate(-135)" fill="#78a8c7"/>
+        <rect id="Rectangle_625" data-name="Rectangle 625" width="3.1" height="0.9" transform="translate(11.791 11.139) rotate(45)" fill="#78a8c7"/>
+      </g>
+    </g>
+    <rect id="Rectangle_672" data-name="Rectangle 672" width="24" height="24" transform="translate(15 77)" fill="none"/>
+  </g>
+</svg>

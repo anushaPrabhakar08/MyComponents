@@ -1,0 +1,402 @@
+/*-----BODY Content---------*/
+.bui-navbar-body {
+  margin: 0px;
+ 
+}
+
+/*------Header Part-------*/
+.bui-navbar-divheader {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  height: 3.75rem;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16);
+}
+
+/*------For Buttons--------*/
+.bui-navbar-buttons {
+  align-items: center;
+  display: flex;
+}
+
+.bui-navbar-secondarybutton {
+  height: 1.5rem;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bui-navbar-header-buttonicon {
+  height: 1.5rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-left: 1px solid #dedfe0;
+  border-right: 1px solid #dedfe0;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.bui-navbar-header-buttonprofile {
+  height: 24px;
+  background-color: #0028a0;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 8px;
+  outline: none;
+  border: none;
+  margin-right: 20px;
+}
+
+.bui-navbar-header-buttonprofile:hover {
+  background: #8093cf;
+}
+
+.bui-navbar-header-buttonprofile:active {
+  background: #0028a0;
+  border: 1px solid #8093cf;
+}
+
+/*---------For Checkbox-------*/
+.bui-navbar-checkbox,
+.bui-navbar-checkbox_bottom {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  top: 10px;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.bui-navbar-ul:hover .bui-navbar-toggle_bottom .bui-navbar-expandarrow {
+  display: none;
+}
+
+/*----------Toggle------------*/
+/* .bui-navbar-toggle{
+    position: absolute;
+    margin-left: 12px;   
+} */
+
+.bui-navbar-toggle_bottom {
+  bottom: 0px;
+}
+
+/*---------For UL content--------*/
+.bui-navbar-ul {
+  background-color: #00568f;
+  list-style-type: none;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  margin-top: 0px;
+  padding-left: 0px;
+  width: 52px;
+  z-index: 1;
+}
+
+.bui-navbar-ul:hover {
+  overflow-y: overlay;
+}
+
+.bui-navbar-li-a .bui-navbar-span {
+  display: none;
+}
+
+/*--------- On hover of Side Navigation bar---------------*/
+.bui-navbar-checkbox_bottom:checked
+  ~ .bui-navbar-ul
+  > .bui-navbar-li
+  .bui-navbar-li-a
+  .bui-navbar-span,
+.bui-navbar-checkbox:checked
+  ~ .bui-navbar-ul
+  > .bui-navbar-li
+  .bui-navbar-li-a
+  .bui-navbar-span,
+.bui-navbar-checkbox:hover
+  ~ .bui-navbar-ul
+  > .bui-navbar-li
+  .bui-navbar-li-a
+  .bui-navbar-span,
+.bui-navbar-sidebar
+  .bui-navbar-ul:hover
+  > .bui-navbar-li
+  .bui-navbar-li-a
+  .bui-navbar-span,
+.bui-navbar-sidebar
+  .bui-navbar-ul:hover
+  .bui-navbar-toggle_bottom
+  .bui-navbar-pin {
+  display: block;
+}
+
+.bui-navbar-checkbox:checked ~ .bui-navbar-ul,
+.bui-navbar-checkbox:hover ~ .bui-navbar-ul,
+.bui-navbar-ul:hover,
+.bui-navbar-pin:hover ~ .bui-navbar-ul,
+.bui-navbar-checkbox_bottom:checked ~ .bui-navbar-ul {
+  width: 210px;
+}
+
+/*-------------Logo----------- */
+.bui-navbar-checkbox_bottom:checked
+  ~ .bui-navbar-ul
+  > .bui-navbar-li
+  .bui-navbar-icon-logo,
+.bui-navbar-sidebar
+  .bui-navbar-ul:hover
+  > .bui-navbar-li
+  .bui-navbar-icon-logo {
+  background: url(../../assets/images/BEATFlow_logo.svg) no-repeat;
+  height: 64px;
+  width: 56%;
+}
+
+.bui-navbar-checkbox_bottom:checked
+  ~ .bui-navbar-ul
+  > li.bui-navbar-toggle_bottom
+  .bui-navbar-pin {
+  background: url(../../assets/images/Collapse_Arrow.svg) no-repeat;
+  display: block;
+}
+
+.bui-navbar-icon-logo {
+  background: url(../../assets/images/BEATFlow_Short_logo.svg) no-repeat;
+  /* padding: 8px 0px 8px 0px;
+    height: 64px; */
+}
+
+/* .bui-navbar-span-logo{
+    display: flex !important;
+    align-items: center !important;
+    left: 0px !important;
+    top:5px !important;
+} */
+/* .bui-navbar-li-a-logo{
+    display: flex !important;
+    justify-content: baseline !important;
+} */
+
+.bui-navbar-li:first-child:hover {
+  background: transparent;
+}
+
+/* ------------Expand Arrow------------ */
+.bui-navbar-checkbox_bottom:checked
+  ~ .bui-navbar-ul
+  > li.bui-navbar-toggle_bottom
+  .bui-navbar-expandarrow {
+  display: none;
+}
+
+/*-------Menus--------*/
+.bui-navbar-li-a {
+  color: #78a8c7;
+  cursor: pointer;
+  text-decoration: none;
+  height: 40px;
+}
+
+.bui-navbar-li {
+  cursor: pointer;
+}
+
+.bui-navbar-li:first-child {
+  height: 80px;
+}
+
+.bui-navbar-li-a {
+  display: flex;
+  align-items: center;
+}
+
+.bui-navbar-li:hover {
+  background-color: #19679a;
+}
+
+.bui-navbar-li-a:active,
+.bui-navbar-li-a:focus {
+  color: #e5f5fc;
+}
+
+.bui-navbar-li-logo,
+.bui-navbar-li-a-logo,
+.bui-navbar-span-logo {
+  height: 64px;
+}
+
+.bui-navbar-icon-logo {
+  padding: 8px 0px 8px 0px;
+  height: 64px;
+  /* width: 100%; */
+}
+
+.bui-navbar-icon-beatflow {
+  height: 32px;
+}
+
+/*-------for span---------*/
+.bui-navbar-span {
+  font-size: 14px;
+  
+  padding-left: 8px;
+}
+
+/*-----for icon--------*/
+.bui-navbar-icon {
+  height: 24px;
+  padding-left: 15px;
+  border: none;
+}
+
+/* ---------- iframe----------*/
+.bui-navbar-iframe {
+  position: fixed;
+  float: right;
+  height: 92%;
+  width: 96%;
+  margin-top: 60px;
+  margin-left: 60px;
+  border: none;
+  z-index: -1;
+}
+
+.bui-navbar-checkbox_bottom:checked ~ iframe {
+  margin-left: 240px;
+  width: 85%;
+}
+
+.bui-navbar-checkbox:checked ~ .bui-navbar-ul ~ .bui-navbar-iframe {
+  margin-left: 240px;
+  width: 85%;
+}
+
+.bui-navbar-dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background: #f1f1f1;
+  right: 10px;
+  z-index: 1;
+}
+
+.bui-navbar-profilebutton-icon-name {
+  padding-left: 15px;
+  height: 30px;
+}
+
+.bui-navbar-dropdown-content .bui-navbar-profile-a {
+  padding: 6px 6px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  color: #55565a;
+  display: flex;
+}
+.bui-navbar-profile-span {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.bui-navbar-profile-a-profilename {
+  background-color: #00568f;
+  color: #ffffff;
+  height: 40px;
+  padding-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.bui-navbar-dropdown-content .bui-navbar-profile-a:hover {
+  background-color: #ddd;
+}
+
+.bui-navbar-profile:hover .bui-navbar-dropdown-content {
+  display: block;
+}
+
+.bui-navbar-pin {
+  background: url(../../assets/images/Notification_Normal.svg) no-repeat;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  pointer-events: inherit;
+}
+
+.bui-navbar-expandarrow {
+  background: url(../../assets/images/Expand_Arrow.svg) right no-repeat;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  padding: 0 0 0 0.75rem;
+}
+
+.bui-navbar-expandarrow,
+.bui-navbar-pin {
+  z-index: 2;
+  position: fixed;
+  bottom: 8px;
+  cursor: pointer;
+}
+
+.bui-navbar-pin {
+  display: none;
+  left: 170px;
+}
+
+.bui-navbar-toggle_bottom {
+  height: 40px;
+  width: inherit;
+  margin: unset;
+  padding-left: 15px;
+}
+
+.bui-navbar-sidebar
+  .bui-navbar-ul:hover
+  .bui-navbar-toggle_bottom
+  .bui-navbar-toggle_bottom_icon {
+  border-top: 1px solid #78a8c7;
+}
+
+.bui-navbar-checkbox_bottom:checked
+  ~ .bui-navbar-ul
+  > .bui-navbar-toggle_bottom
+  .bui-navbar-toggle_bottom_icon {
+  border-top: 1px solid #78a8c7;
+}
+
+.bui-navbar-toggle_bottom .bui-navbar-toggle_bottom_icon {
+  border-top: 1px solid #78a8c7;
+  left: 0px;
+  position: fixed;
+  width: inherit;
+  height: inherit;
+  bottom: 0;
+  background: #00568f;
+  z-index: 2;
+  padding-left: 12px;
+}
+
+.bui-navbar-ul::-webkit-scrollbar,
+.bui-navbar-ul::-ms-scrollbar {
+  width: 0.25em;
+}
+
+.bui-navbar-ul::-webkit-scrollbar-track,
+.bui-navbar-ul::-ms-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.bui-navbar-ul::-webkit-scrollbar-thumb,
+.bui-navbar-ul::-ms-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}

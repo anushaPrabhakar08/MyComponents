@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../PopUps/Popup.css">
+
+</head>
+
+<body class="bui-body">
+    <h1>PopUp</h1>
+    <h3>A popup is a transient floating window that informs users about a specific task. It can contain critical
+        information,
+        require decisions, or involve multiple tasks and appears in front of app content to provide critical information
+        or
+        ask for a decision.</h3>
+    <div class="tabs">
+
+        <div class="tab">
+            <input type="radio" id="tab-1" name="tab-group-1" checked>
+            <label for="tab-1" class="bui-tabs-label">Small</label>
+            <div class="bui-tabs">
+                <div class="bui-tabs-code">
+                    <code>
+                <pre class="bui-tabs-pre">
+                        .bui-popup {
+                            display: flex;
+                            justify-content: center;
+                        }
+                
+                        .bui-popup-a {
+                            font-size: 14px;
+                            padding: 10px;
+                            color: #55565A;
+                            border: 2px solid #00568F;
+                            border-radius: 4px;
+                            text-decoration: none;
+                            cursor: pointer;
+                            transition: all 0.1s ease-out;
+                        }
+                
+                        .bui-popup-content {
+                            position: fixed;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            background: rgba(80, 80, 80, 0.8);
+                            visibility: hidden;
+                            opacity: 0;
+                        }
+                
+                        .bui-popup-content:target {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                
+                        .bui-popup-subcontent {
+                            background: #ffffff;
+                            border-radius: 4px;
+                            width: 390px;
+                            position: relative;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
+                        }   
+                        
+                        .bui-popup-close,
+                        .bui-popup-confirm {
+                            font-size: 14px;
+                            padding: 7px;
+                            color: #55565A;
+                            border: 1px solid #00568F;
+                            border-radius: 4px;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                
+                        .bui-popup-confirm {
+                            background-color: #00568F;
+                            color: #ffffff;
+                            margin-left: 12px;
+                        }
+                
+                        .bui-popup-div-controls {
+                            display: flex;
+                            justify-content: flex-end;
+                            height: 32px;
+                            padding: 12px 40px 12px 40px;
+                            align-items: center;
+                        }
+                        
+                        .bui-popup-header {
+                            font-size: 24px;
+                            color: #000000;
+                            height: 28px;
+                            margin-bottom: 0px;
+                            background-color: #FAFAFB;
+                            padding: 12px 40px 12px 40px;
+                            border-radius: 4px;
+                        }
+                
+                        .bui-popup-p {
+                            font-size: 14px;
+                            color: #55565A;
+                            padding: 24px 40px 24px 40px;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                        }
+                
+                        .bui-popup-hr {
+                            color: #DEDFE0;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                        }
+                </pre>
+            </code>
+                </div>
+                <div class="bui-switch-1">
+                    <div class="bui-popup">
+                        <a class="bui-popup-a" href="#bui-popups">Small Pop Up</a>
+                    </div>
+                    <div class="bui-popup-content" id="bui-popups">
+                        <div class="bui-popup-subcontent">
+                            <header class="bui-popup-header">Reset password</header>
+                            <p class="bui-popup-p">
+                                You have requested to reset the password for
+                                Abhishek Mishra. Upon confirmation the user will
+                                receive an email with a link to a form to reset his
+                                own passowrd.
+                                <br>
+                                <br>
+                                Are you sure you want to continue?</p>
+                            <hr class="bui-popup-hr">
+                            <div class="bui-popup-div-controls">
+                                <a class="bui-popup-close" href="#">Cancel</a>
+                                <a class="bui-popup-confirm">Confirm</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab">
+            <input type="radio" id="tab-2" name="tab-group-1">
+            <label for="tab-2" class="bui-tabs-label">Medium</label>
+            <div class="bui-tabs-2">
+                <div class="bui-tabs-code">
+                    <code>
+                    <pre class="bui-tabs-pre">
+                            .bui-popup {
+                                display: flex;
+                                justify-content: center;
+                            }
+                    
+                            .bui-popup-a {
+                                font-size: 14px;
+                                padding: 10px;
+                                color: #55565A;
+                                border: 2px solid #00568F;
+                                border-radius: 4px;
+                                text-decoration: none;
+                                cursor: pointer;
+                                transition: all 0.1s ease-out;
+                            }
+                    
+                            .bui-popup-content-2 {
+                                position: fixed;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                background: rgba(80, 80, 80, 0.8);
+                                visibility: hidden;
+                                opacity: 0;
+                            }
+                    
+                            .bui-popup-content-2:target {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                    
+                            .bui-popup-subcontent-2 {
+                                background: #ffffff;
+                                border-radius: 4px;
+                                width: 390px;
+                                position: relative;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
+                            }
+                    
+                            .bui-popup-subcontent-2 {
+                                width: 585px;
+                            }
+                    
+                            .bui-popup-close,
+                            .bui-popup-confirm {
+                                font-size: 14px;
+                                padding: 7px;
+                                color: #55565A;
+                                border: 1px solid #00568F;
+                                border-radius: 4px;
+                                text-decoration: none;
+                                cursor: pointer;
+                            }
+                    
+                            .bui-popup-confirm {
+                                background-color: #00568F;
+                                color: #ffffff;
+                                margin-left: 12px;
+                            }
+                    
+                            .bui-popup-div-controls {
+                                display: flex;
+                                justify-content: flex-end;
+                                height: 32px;
+                                padding: 12px 40px 12px 40px;
+                                align-items: center;
+                            }
+                    
+                            .bui-popup-content-2 .bui-popup-div-controls {
+                                justify-content: space-between;
+                            }
+                    
+                            .bui-popup-header {
+                                font-size: 24px;
+                                color: #000000;
+                                height: 28px;
+                                margin-bottom: 0px;
+                                background-color: #FAFAFB;
+                                padding: 12px 40px 12px 40px;
+                                border-radius: 4px;
+                            }
+                    
+                            .bui-popup-p {
+                                font-size: 14px;
+                                color: #55565A;
+                                padding: 24px 40px 24px 40px;
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                            }
+                    
+                            .bui-popup-hr {
+                                color: #DEDFE0;
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                            }
+                            .bui-popup-browse-button{
+                                height: 32px;
+                                border-radius: 4px;
+                                border: none;
+                                display: flex;
+                                align-items: center;
+                            }
+                            .bui-popup-browse{            
+                                padding-bottom: 24px;
+                                padding-left: 40px;
+                            }
+                            .bui-popup-button{
+                                display: flex;
+                            }
+                    </pre>
+                </code>
+                </div>
+                <div class="bui-switch-2">
+                    <div class="bui-popup">
+                        <a class="bui-popup-a" href="#bui-popups-2">Medium Pop Up</a>
+                    </div>
+
+                    <div id="bui-popups-2" class="bui-popup-content-2">
+                        <div class="bui-popup-subcontent-2">
+                            <header class="bui-popup-header">Upload List</header>
+                            <p class="bui-popup-p">
+                                1.<span style="color:#00568F;">Click here</span> to download the sample Excel.
+                                <br>
+                                <br>
+                                2.Fill the details of the form fields in the respective column.Make sure the mandatory
+                                fields
+                                are filled.
+                                <br>
+                                <br>
+                                3.Upload the edited Excel back.
+                                <br>
+                                <br>
+                            </p>
+                                <div class="bui-popup-browse">
+                                    <button class="bui-popup-browse-button"> <img src="../browse.svg"
+                                            class="bui-popup-browse-icon" />Browse</button>
+                                </div>
+                           
+                            <hr class="bui-popup-hr">
+                            <div class="bui-popup-div-controls">
+                                <div>
+                                    <input type="checkbox" id="bui-popup-checked">
+                                    <label for="bui-popup-checked">Do not show me again</label>
+                                </div>
+                                <div class="bui-popup-button">
+                                    <a class="bui-popup-close" href="#">Cancel</a>
+                                    <a class="bui-popup-confirm">Upload</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab">
+            <input type="radio" id="tab-3" name="tab-group-1">
+            <label for="tab-3" class="bui-tabs-label">Large</label>
+            <div class="bui-tabs-3">
+                <div class="bui-tabs-code">
+                    <code>
+                <pre class="bui-tabs-pre">
+                        .bui-popup {
+                            display: flex;
+                            justify-content: center;
+                        }
+                
+                        .bui-popup-a {
+                            font-size: 14px;
+                            padding: 10px;
+                            color: #55565A;
+                            border: 2px solid #00568F;
+                            border-radius: 4px;
+                            text-decoration: none;
+                            cursor: pointer;
+                            transition: all 0.1s ease-out;
+                        }
+                
+                        .bui-popup-content-3 {
+                            position: fixed;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            background: rgba(80, 80, 80, 0.8);
+                            visibility: hidden;
+                            opacity: 0;
+                        }
+                
+                        .bui-popup-content-3:target {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                
+                        .bui-popup-subcontent-3 {
+                            background: #ffffff;
+                            border-radius: 4px;
+                            width: 390px;
+                            position: relative;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
+                        }
+                
+                       
+                        .bui-popup-subcontent-3 {
+                            width: 780px;
+                        }
+                
+                        .bui-popup-close,
+                        .bui-popup-confirm {
+                            font-size: 14px;
+                            padding: 7px;
+                            color: #55565A;
+                            border: 1px solid #00568F;
+                            border-radius: 4px;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                
+                        .bui-popup-confirm {
+                            background-color: #00568F;
+                            color: #ffffff;
+                            margin-left: 12px;
+                        }
+                
+                        .bui-popup-div-controls {
+                            display: flex;
+                            justify-content: flex-end;
+                            height: 32px;
+                            padding: 12px 40px 12px 40px;
+                            align-items: center;
+                        }
+                
+                        .bui-popup-header,
+                        .bui-popup-subheader {
+                            font-size: 24px;
+                            color: #000000;
+                            height: 28px;
+                            margin-bottom: 0px;
+                            background-color: #FAFAFB;
+                            padding: 12px 40px 12px 40px;
+                            border-radius: 4px;
+                        }
+                
+                        .bui-popup-subheader {
+                            font-size: 14px;
+                            border-bottom: 1px solid #DEDFE0;
+                        }
+                
+                        .bui-popup-p {
+                            font-size: 14px;
+                            color: #55565A;
+                            padding: 24px 40px 24px 40px;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                        }
+                
+                        .bui-popup-hr {
+                            color: #DEDFE0;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                        }
+                
+                        .bui-popup-text {
+                            border-bottom: 1px solid #ccc !important;
+                            border: none;
+                            width: 700px;
+                        }
+                
+                        .bui-popup-textbox {
+                            padding: 24px 40px 24px 40px;
+                        }
+                
+                        .bui-popup-label {
+                            font-size: 12px;
+                            color: rgb(167, 167, 167);
+                        }
+                </pre>
+            </code>
+                </div>
+                <div class="bui-switch-3">
+                    <div class="bui-popup">
+                        <a class="bui-popup-a" href="#bui-popups-3">Large Pop Up</a>
+                    </div>
+                    <div id="bui-popups-3" class="bui-popup-content-3">
+                        <div class="bui-popup-subcontent-3">
+                            <header class="bui-popup-header">Create Request</header>
+                            <header class="bui-popup-subheader">Request inputs</header>
+
+                            <div class="bui-popup-textbox">
+                                <div>
+                                    <label for="title" class="bui-popup-label">Title</label>
+                                    <br>
+                                    <input id="title" type="text" class="bui-popup-text"
+                                        placeholder="Enter title for request">
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="description" class="bui-popup-label">Description</label>
+                                    <br>
+                                    <input id="description" type="text" class="bui-popup-text"
+                                        placeholder="Enter description">
+                                </div>
+                            </div>
+                            <header class="bui-popup-subheader">People inputs</header>
+                            <div class="bui-popup-textbox">
+                                <div>
+                                    <label for="assign" class="bui-popup-label">Assign to</label>
+                                    <br>
+                                    <input id="assign" type="text" class="bui-popup-text"
+                                        placeholder="Search or enter a name">
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="watchers" class="bui-popup-label">Watchers</label>
+                                    <br>
+                                    <input id="watchers" type="text" class="bui-popup-text"
+                                        placeholder="Search or enter a name">
+                                </div>
+                            </div>
+                            <header class="bui-popup-subheader">Data inputs</header>
+                            <div class="bui-popup-textbox">
+                                <label for="due" class="bui-popup-label">Due on</label>
+                                <br>
+                                <input id="due" type="text" class="bui-popup-text" placeholder="Set due date and time">
+                            </div>
+                            <hr class="bui-popup-hr">
+                            <div class="bui-popup-div-controls">
+                                <a class="bui-popup-close" href="#">Cancel</a>
+                                <a class="bui-popup-confirm">Create</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div>
+        <h2>CSS Properties</h2>
+        <table class="bui-tabs-table">
+            <thead>
+                <tr>
+                    <th class="bui-tabs-th">Attributes</th>
+                    <th class="bui-tabs-th">Description</th>
+                    <th class="bui-tabs-th">Default Value</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="bui-tabs-td">Title</td>
+                <td class="bui-tabs-td">The font properties of title name, size and color</td>
+                <td class="bui-tabs-td">Helvetica Neue Regular, 24 px, Black #000000</td>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Supporting text</td>
+                <td class="bui-tabs-td">The font properties of title name, size and color</td>
+                <td class="bui-tabs-td">Helvetica Neue Regular, 14px, Dark Gray #55565A</td>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Seperator</td>
+                <td class="bui-tabs-td">The color of the seperator</td>
+                <td class="bui-tabs-td">#DEDFE0</td>
+            </tr>
+
+            <tr>
+                <td class="bui-tabs-td">Header background</td>
+                <td class="bui-tabs-td">The background color od header</td>
+                <td class="bui-tabs-td">#FAFAFB</td>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Popup Container</td>
+                <td class="bui-tabs-td">The background color of popup</td>
+                <td class="bui-tabs-td">#FFFFFF</td>
+            </tr>
+            <tr>
+                <td class="bui-tabs-td">Popup Container</td>
+                <td class="bui-tabs-td">The box shadow of popup</td>
+                <td class="bui-tabs-td">Shadow - X:0 , Y: 1, Blur : 6 , Color : Black, Opacity 8%</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

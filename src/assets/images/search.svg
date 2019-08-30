@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_1521" data-name="Group 1521" transform="translate(-516 -182)">
+    <g id="Group_1240" data-name="Group 1240" transform="translate(125 -13)">
+      <rect id="Rectangle_853" data-name="Rectangle 853" width="24" height="24" transform="translate(391 195)" fill="none"/>
+    </g>
+    <g id="Group" transform="translate(519 192.778) rotate(-45)">
+      <g id="Oval" transform="translate(0 0)" fill="none" stroke="#75787b" stroke-miterlimit="10" stroke-width="1.5">
+        <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+        <circle cx="5.5" cy="5.5" r="4.75" fill="none"/>
+      </g>
+      <path id="Line" d="M.556,0V4.5" transform="translate(5.117 10.511)" fill="none" stroke="#75787b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

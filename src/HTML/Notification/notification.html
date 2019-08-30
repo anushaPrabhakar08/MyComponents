@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Notification</title>
+                <link rel="stylesheet" type="text/css" href="notification.css">
+            </head>
+    
+<body onload=" openType('succes')" style="background-color:lavender">
+
+        <h1>Notification</h1>
+<pre class="bui-notification-preclass">
+Notiﬁcation banner communicates the state of the entire application or a section of it. It stays visible until the user interacts with it but banners can automatically be dismissed in-case they are providing non-critical information.
+Banner notiﬁcations are typically placed over the full width of the application (mobile) or at a speciﬁc/full width at the local level of a application. They can be used on mobile, tablets and desktops.
+</pre>
+
+        <!--Description-->
+        <button class="bui-tablink-button" onclick="openType('succes')">Success</button>
+        <button class="bui-tablink-button" onclick="openType('warning')">Warning </button>
+        <button class="bui-tablink-button" onclick="openType('error')">Error</button>
+        <button class="bui-tablink-button" onclick="openType('information')">Information</button>
+
+
+        <!-- Sucess -->
+
+<div class="bui-notification-type-content"id="succes">
+        <div class="bui-code-box">
+                    <h1 class="bui-heading-h1">Success</h1>
+                    <hr>
+                 <div class="bui-notification-codeboccontainer">            
+<code><pre class="bui-notification-code">
+
+    .bui-notification-success,
+    .bui-notification-warning,
+    .bui-notification-Error,
+    .bui-notification-information
+    {
+        font-size: 14px;
+        font-family: Helvetica Neue Regular;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 8px;
+        height:44px;
+        width:auto;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }    
+
+    .bui-notification-success
+    {
+        background-color: #DDEFC7;
+        color:  #78BE20 ;
+    }
+
+    .bui-notification-icon
+    {
+        padding-right: 8px;
+        display: inline-block;
+        height: 24px;
+    }
+        
+    .bui-notification-icon-right
+    {
+        display:flex;
+        margin-left: auto;
+    }
+
+    .bui-notification-close-icon
+    {
+        height: 24px;
+    } 
+
+</pre> </code>
+            <div class="bui-notification-formclass">
+                <h2>Sample</h2>       
+                <form>            
+                    <div>
+                      <h2>Success</h2>  
+                    <div class="bui-notification-container">
+                        <label class="bui-notification-success"><img class="bui-notification-icon" src="image\Success.svg">Success or conﬁrmation message if any....
+                        <div  class="bui-notification-icon-right" ><img class="bui-notification-close-icon" src="image\Close_Success.svg"> </div>
+                        </label>
+                    </div>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+</div>
+   
+            <!-- Warning -->
+                    
+<div class="bui-notification-type-content"id="warning">
+        <div class="bui-code-box">
+                <h1 class="bui-heading-h1">Warning</h1>
+                <hr>
+            <div class="bui-notification-codeboccontainer">            
+<code><pre class="bui-notification-code">
+
+    .bui-notification-success,
+    .bui-notification-warning,
+    .bui-notification-Error,
+    .bui-notification-information
+    {
+        font-size: 14px;
+        font-family: Helvetica Neue Regular;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 8px;
+        height:44px;
+        width:auto;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }    
+    
+    .bui-notification-warning
+    {
+        background-color:  #F1E1BF ;
+        color:   #C68700 ;
+    }
+
+</pre> </code>
+
+        <div class="bui-notification-formclass">
+            <h2>Sample</h2>       
+            <form>            
+                    <div>  
+                            <h2>Warning</h2> 
+                    <div class="bui-notification-container">
+                        <label class="bui-notification-warning"><img class="bui-notification-icon" src="image\Warning.svg">Warning message if any....
+                            <div  class="bui-notification-icon-right" ><img class="bui-notification-close-icon" src="image\Close_Warning.svg"> </div>
+                        </label>
+                    </div> 
+                    </div>
+            </form> 
+        </div>
+    </div>
+</div>
+</div>
+                
+                <!-- Error -->
+                
+<div class="bui-notification-type-content"id="error">
+    <div class="bui-code-box">
+            <h1 class="bui-heading-h1">Error</h1>
+            <hr>
+         <div class="bui-notification-codeboccontainer">            
+<code><pre class="bui-notification-code">
+
+    .bui-notification-success,
+    .bui-notification-warning,
+    .bui-notification-Error,
+    .bui-notification-information
+    {
+        font-size: 14px;
+        font-family: Helvetica Neue Regular;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 8px;
+        height:44px;
+        width:auto;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    } 
+
+    .bui-notification-Error
+    {
+        background-color:#F1C9C9;
+        color:#C62828;
+    }
+
+</pre> </code>
+
+    <div class="bui-notification-formclass">
+        <h2>Sample</h2>       
+            <form>            
+                <div>  
+                        <h2>Error</h2> 
+                    <div class="bui-notification-container">
+                            <label class="bui-notification-Error"><img class="bui-notification-icon" src="image\Error.svg">Error message if any....
+                                <div  class="bui-notification-icon-right" ><img class="bui-notification-close-icon" src="image\Close_Error.svg"> </div>
+                            </label>
+                    </div>  
+                </div>
+            </form>      
+    </div>
+</div>
+</div>
+</div>
+                    
+                    <!-- Information -->
+                    
+<div class="bui-notification-type-content"id="information">
+        <div class="bui-code-box">
+                <h1 class="bui-heading-h1">Information</h1>
+                <hr>
+            <div class="bui-notification-codeboccontainer">            
+<code><pre class="bui-notification-code">
+
+    .bui-notification-success,
+    .bui-notification-warning,
+    .bui-notification-Error,
+    .bui-notification-information
+    {
+        font-size: 14px;
+        font-family: Helvetica Neue Regular;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 8px;
+        height:44px;
+        width:auto;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    } 
+
+    .bui-notification-information
+    {
+        background-color: #BFE6F7 ;
+        color: #009FDF ;
+    }       
+</pre> </code>
+
+        <div class="bui-notification-formclass">
+            <h2>Sample</h2>       
+            <form>            
+                    <div>  <h2>Information</h2> 
+                        <div class="bui-notification-container">
+                                <label class="bui-notification-information"><img class="bui-notification-icon" src="image\Info.svg">Information if any....
+                                    <div  class="bui-notification-icon-right" ><img class="bui-notification-close-icon" src="image\Close_Info.svg"> </div>
+                                </label>
+                            </div> 
+                        </div>
+                </form> 
+             </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <h2>CSS Properties</h2>
+    <table class="bui-notification-table">
+       
+        <tr>
+            <th class="bui-notification-th">Attributes</th>
+            <th class="bui-notification-th">Description</th>
+            <th class="bui-notification-th">Default Value</th>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Background color</td>
+            <td class="bui-notification-td">The background color of all the  Container </td>
+            <td class="bui-notification-td">---------- </td>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Label Font</td>
+            <td class="bui-notification-td">The font family of the label</td>
+            <td class="bui-notification-td">Helvetica Neue Regular</td>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Label size</td>
+            <td class="bui-notification-td">The font size of the label</td>
+            <td class="bui-notification-td">14px</td>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Icon size</td>
+            <td class="bui-notification-td">The Icon size of the label</td>
+            <td class="bui-notification-td">24px</td>
+        </tr>
+
+        <tr>
+        <td class="bui-notification-td">Success</td>
+        <td class="bui-notification-td">----------</td>
+        <td class="bui-notification-td">----------</td>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Background color</td>
+            <td class="bui-notification-td">Background of Sccessful notification</td>
+            <td class="bui-notification-td"> #DDEFC7 </td>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Label color</td>
+            <td class="bui-notification-td">Label color of Successful notification</td>
+            <td class="bui-notification-td">#78BE20 </td>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Warning</td>
+            <td class="bui-notification-td">----------</td>
+            <td class="bui-notification-td">----------</td>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Background color</td>
+            <td class="bui-notification-td">Background of Sccessful notification</td>
+            <td class="bui-notification-td">#F1E1BF  </td>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Label color</td>
+            <td class="bui-notification-td">Label color of Successful notification</td>
+            <td class="bui-notification-td">#C68700  </td>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Error</td>
+            <td class="bui-notification-td">----------</td>
+            <td class="bui-notification-td">----------</td>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Background color</td>
+            <td class="bui-notification-td">Background of Sccessful notification</td>
+            <td class="bui-notification-td"> #F1C9C9  </td>
+        </tr>
+        <tr>
+            <td class="bui-notification-td">Label color</td>
+            <td class="bui-notification-td">Label color of Successful notification</td>
+            <td class="bui-notification-td">#C62828 </td>
+        </tr>
+
+        <tr>
+            <td class="bui-notification-td">Information</td>
+            <td class="bui-notification-td">----------</td>
+            <td class="bui-notification-td">----------</td>
+        </tr>
+        <tr>
+            <td class="bui-notification-td">Background color</td>
+            <td class="bui-notification-td">Background of Sccessful notification</td>
+            <td class="bui-notification-td"> #BFE6F7 </td>
+        </tr>
+        <tr>
+            <td class="bui-notification-td">Label color</td>
+            <td class="bui-notification-td">Label color of Successful notification</td>
+            <td class="bui-notification-td">#009FDF </td>
+        </tr>
+
+    </table>
+</div>
+   
+<script>
+        function openType(buiNotificationName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("bui-notification-type-content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("bui-tablink-button");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(buiNotificationName).style.display = "block";
+       
+      }
+   </script>
+</body>
+</html> 

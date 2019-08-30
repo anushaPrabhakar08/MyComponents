@@ -1,0 +1,250 @@
+.bui-dropdown-dropbtn {
+  width: 12rem;
+  background-color: white;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.bui-dropdown-keycmddropbtn,.bui-dropdown-selectstatedropbtn{
+  width: 14rem;
+  background-color: white;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.bui-dropdown-TextlistContent, .bui-dropdown-TextIconlistContent{
+  padding-bottom: 8px;
+  padding-top: 8px;
+  width: 13.3rem;
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  overflow: auto;
+  box-shadow: 0px 3px 6px rgb(0, 0,0,0.16);
+  z-index: 1;
+}
+
+/* .bui-dropdown:hover .bui-dropdown-TextlistContent,
+.bui-dropdown:hover .bui-dropdown-TextIconlistContent,
+.bui-dropdown:hover .bui-dropdown-keyboardCmdlistContent,
+.bui-dropdown:hover .bui-dropdown-selectionStateContent {
+  display: block;
+} */
+
+.bui-dropdown-divider{
+  margin: 0;
+  border: 1px solid #F0F0F1 ;
+  border-top-width: 0px;
+}
+
+.bui-dropdown-textlist-normal, .bui-dropdown-textlist-hover,
+.bui-dropdown-textlist-pressed, .bui-dropdown-textlist-disabled {
+  text-align: initial;
+  line-height: 48px;
+  font-size: 14px;
+  font-family:Helvetica;
+  color: #55565A;
+  padding-left: 16px; 
+  padding-right: 16px; 
+  text-decoration: none;
+  display: block;
+}
+
+.bui-dropdown-textlist-hover:hover, 
+.bui-dropdown-texticonlist-hover:hover  {
+   background-color: #F0F0F1;
+}
+
+.bui-dropdown-textlist-pressed:active, 
+.bui-dropdown-texticonlist-pressed:active{
+  background-color: #CAC9C7;
+}
+
+.bui-dropdown-textlist-disabled{
+  color: #55565A;
+  opacity: 0.3;
+}
+
+.bui-dropdown-texticonlist-normal,.bui-dropdown-texticonlist-hover,
+.bui-dropdown-texticonlist-pressed, .bui-dropdown-texticonlist-disabled{
+  line-height: 48px;
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #55565A;
+  text-decoration: none;
+  display: block;
+  padding-left: 24px; 
+  padding-right: 24px;
+}
+
+.bui-dropdown-texticonlist-disabled {
+  color: #75787B ;
+  opacity: 0.3;
+}
+.bui-dropdown-texticonkeycmdlist-normal{
+line-height: 48px;
+font-size: 14px;
+font-family: Helvetica;
+color: #55565A;
+text-decoration: none;
+display: block;
+padding-left: 24px; 
+padding-right: 24px;
+}
+
+.bui-dropdown-selectionStatelist-normal,
+.bui-dropdown-selectionStatelist-hover{
+ text-align: initial;
+ padding: 0 24px;
+ line-height: 48px;
+ font-size: 14px;
+ font-family: Helvetica;
+ color: #55565A;
+ text-decoration: none;
+ display: block;
+}
+.bui-dropdown-selectionStatelist-hover:hover {
+  background-color: #F0F0F1;
+}
+.bui-dropdown-keyboardcmd{
+  color: #75787B;    
+  float: right;   
+}
+
+        /*------------sub menu styles---------------*/
+
+.bui-dropdown-submenuContent{
+cursor: pointer;
+box-shadow: 0px 3px 6px rgb(0, 0,0,0.16);
+z-index: 1;
+padding-top: 8px;
+padding-bottom: 8px;
+border-radius: 4px;
+position: absolute;
+top: 0;
+right: -152px;
+width: 150px;
+list-style: none;
+display: none;
+}
+
+.bui-dropdown-selectionStateContent,.bui-dropdown-keyboardCmdlistContent{
+  width: 15.3rem;
+  list-style: none;
+  padding: 8px 0px;
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 6px rgb(0, 0,0,0.16);
+  z-index: 1; 
+}
+
+.bui-dropdown-keyboardCmdlistContent > .bui-dropdown-showsubmenu,
+.bui-dropdown-selectionStateContent > .bui-dropdown-showsubmenu,
+.bui-dropdown-selectionStateContent > .bui-dropdown-selectionStatelist-normal,
+.bui-dropdown-selectionStateContent > .bui-dropdown-selectionStatelist-hover,
+.bui-dropdown-selectionStateContent > .bui-dropdown-selectioncontainer{
+  position: relative;
+}
+
+.bui-dropdown:hover > .bui-dropdown-keyboardCmdlistContent, 
+.bui-dropdown-showsubmenu:hover > .bui-dropdown-submenuContent,
+.bui-dropdown:hover > .bui-dropdown-selectionStateContent,
+.bui-dropdown-selectionStatelist-normal:hover > .bui-dropdown-submenuContent,
+.bui-dropdown-selectionStatelist-hover:hover > .bui-dropdown-submenuContent,
+.bui-dropdown-selectioncontainer:hover > .bui-dropdown-submenuContent,
+.bui-dropdown:hover .bui-dropdown-TextlistContent,
+.bui-dropdown:hover .bui-dropdown-TextIconlistContent,
+.bui-dropdown:hover .bui-dropdown-keyboardCmdlistContent,
+.bui-dropdown:hover .bui-dropdown-selectionStateContent{
+  /* On hover, display the next level's menu */
+  display: block;
+}
+
+/* Selection state selectmark */
+.bui-dropdown-selectioncontainer {
+  display: block;
+  position: relative;
+  padding-left: 2.875rem;
+  cursor: pointer;
+  font-size: 14px;  
+}
+
+.bui-dropdown-selectioncontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.bui-dropdown-selectmark{
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #FFFFFF;
+}
+.bui-dropdown-selectioncontainer input:checked~.bui-dropdown-selectmark:after{
+  display: block;
+}
+.bui-dropdown-selectmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+  top: 13px; 
+  left: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-width: 0 0.1875rem 0.1875rem 0;
+  border-radius:2px; 
+  cursor: pointer;
+  background: url('../../assets/images/tick.svg') left no-repeat;
+  background-size: 24px;
+  right: 40px;
+}
+
+
+.bui-icon-arrow{
+position: absolute;
+background: url('../../assets/images/drowdown arrow.svg') no-repeat;
+width: 24px;
+height: 24px;
+background-position: 4px -2px;
+}
+
+.bui-icon-dummyicon{
+position: absolute;
+background: url('../../assets/images/Dummy Icon.svg') no-repeat;
+width: 24px;
+height: 24px;
+padding-right: 20px;
+left: 30px;
+margin-top: 13px;
+}
+.bui-icon-cascadingicon{
+position: absolute;
+background: url('../../assets/images/Cascading menu arrow icon.svg') no-repeat;
+margin-left: 12px;
+width: 24px;
+height: 24px;
+right: 24px;
+margin-top: 14px;
+}
+
+/* .bui-dropdown-selectioncontainer :checked {
+border: 1px solid green;
+background-color:  red;
+}
+.bui-dropdown-selectmark:after {
+background-color: red;
+}
+.bui-dropdown-selectioncontainer input:checked > .bui-dropdown-submenuContent{
+background-color: red;
+} */

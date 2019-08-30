@@ -1,0 +1,138 @@
+
+.bui-notification-container{
+display:block;
+width: 50%;
+box-shadow:none;
+}
+
+.bui-notification-preclass{
+    font-family: Helvetica;
+    font-size: 0.9rem;
+}
+
+.bui-notification-success,
+.bui-notification-warning,
+.bui-notification-Error,
+.bui-notification-information
+{
+font-size: 14px;
+font-family: Helvetica Neue Regular;
+cursor: pointer;
+padding-left: 20px;
+padding-right: 8px;
+height:44px;
+width:390px;
+border: none;
+outline: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+.bui-notification-success{
+    background-color: #DDEFC7;
+color:  #78BE20 ;
+}
+
+
+.bui-notification-warning{
+    background-color:  #F1E1BF ;
+color:   #C68700 ;
+}
+
+.bui-notification-Error{
+    background-color:#F1C9C9;
+color:#C62828;
+}
+
+.bui-notification-information{
+    background-color: #BFE6F7 ;
+color: #009FDF ;
+}
+
+
+.bui-notification-icon{
+padding-right: 8px;
+display: inline-block;
+height: 24px;
+}
+
+.bui-notification-icon-right{
+     display:flex;
+
+margin-left: auto;
+}
+   .bui-notification-close-icon
+   {
+     height: 24px;
+    } 
+
+
+
+   .bui-tablink-button{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  height: 32px;
+  padding: 10px 14px;
+  float: right;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.bui-tablink-button:hover{
+  border-bottom: 2px solid gray;
+}
+.bui-tablink-button:focus{
+background-color: #8eaec3;
+}
+    
+
+ 
+.bui-notification-table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+
+.bui-notification-th,.bui-notification-td{
+  border-bottom: 2px solid #ddd;
+  font-family: Helvetica;
+  text-align: left;
+  font-size: 0.875rem;
+  padding: 14px;
+}
+
+.bui-notification-code,.bui-notification-th{
+  background-color: #F0F0F1;
+  font-size: 1.1rem;
+ 
+}
+
+
+
+
+.bui-notification-codeboccontainer{
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+}
+.bui-notification-code {
+	width: 45rem;
+    overflow: auto;
+    height: 30rem;
+    background-color: #F0F0F1;
+    margin-right: 50px;
+    padding-left: 20px;
+    color: #00568F;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: none;
+}
+.bui-notification-formclass{
+	padding-left: 20px;
+	min-height: 250px;
+    min-width: 40%;
+}

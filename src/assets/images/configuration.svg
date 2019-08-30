@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_1465" data-name="Group 1465" transform="translate(-1108 -107)">
+    <g id="Group_1463" data-name="Group 1463" transform="translate(599 -220.75)">
+      <g id="Group_1460" data-name="Group 1460">
+        <path id="Rectangle_918" data-name="Rectangle 918" d="M.75,0H10a0,0,0,0,1,0,0V1.5a0,0,0,0,1,0,0H.75A.75.75,0,0,1,0,.75v0A.75.75,0,0,1,.75,0Z" transform="translate(512 333)" fill="#78a8c7"/>
+        <path id="Rectangle_919" data-name="Rectangle 919" d="M0,0H4.25A.75.75,0,0,1,5,.75v0a.75.75,0,0,1-.75.75H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(525 333)" fill="#78a8c7"/>
+        <rect id="Rectangle_920" data-name="Rectangle 920" width="6" height="1.5" transform="translate(525.5 330.75) rotate(90)" fill="#78a8c7"/>
+      </g>
+      <g id="Group_1461" data-name="Group 1461" transform="translate(512 336.75)">
+        <path id="Rectangle_918-2" data-name="Rectangle 918" d="M0,0H9.25A.75.75,0,0,1,10,.75v0a.75.75,0,0,1-.75.75H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(8 2.25)" fill="#78a8c7"/>
+        <path id="Rectangle_919-2" data-name="Rectangle 919" d="M.75,0H5A0,0,0,0,1,5,0V1.5a0,0,0,0,1,0,0H.75A.75.75,0,0,1,0,.75v0A.75.75,0,0,1,.75,0Z" transform="translate(0 2.25)" fill="#78a8c7"/>
+        <rect id="Rectangle_920-2" data-name="Rectangle 920" width="6" height="1.5" transform="translate(6) rotate(90)" fill="#78a8c7"/>
+      </g>
+      <g id="Group_1462" data-name="Group 1462" transform="translate(512 342.75)">
+        <path id="Rectangle_918-3" data-name="Rectangle 918" d="M0,0H9.25A.75.75,0,0,1,10,.75v0a.75.75,0,0,1-.75.75H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(8 2.25)" fill="#78a8c7"/>
+        <path id="Rectangle_919-3" data-name="Rectangle 919" d="M.75,0H6A0,0,0,0,1,6,0V1.5a0,0,0,0,1,0,0H.75A.75.75,0,0,1,0,.75v0A.75.75,0,0,1,.75,0Z" transform="translate(0 2.25)" fill="#78a8c7"/>
+        <rect id="Rectangle_920-3" data-name="Rectangle 920" width="6" height="1.5" transform="translate(9) rotate(90)" fill="#78a8c7"/>
+      </g>
+    </g>
+    <rect id="Rectangle_921" data-name="Rectangle 921" width="24" height="24" transform="translate(1108 107)" fill="none"/>
+  </g>
+</svg>

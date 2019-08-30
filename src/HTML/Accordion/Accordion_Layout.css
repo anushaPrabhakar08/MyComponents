@@ -1,0 +1,77 @@
+.bui-accordion-body,.bui-accordion-preclass 
+{
+  color:  #55565A ;
+  font-family: Helvetica;
+}
+  
+.bui-accordion-codebox
+{
+  display: flex;
+  flex-wrap: wrap;
+} 
+  
+.bui-accordion-formclass, .bui-accordion-code
+{
+  padding-left: 20px;
+  min-height: 400px;
+  overflow: auto;
+  min-width: 40%;
+}
+  
+.bui-accordion-preclass
+{
+  font-size: 0.9rem;
+}
+
+.bui-accordion-code 
+{
+  margin-right: 50px;
+  height: 200px;
+  min-width: 50%;
+  padding-left: 20px;
+  color: #00568F;
+  font-weight: bold;
+  border:none;
+}
+
+.bui-accordion-table
+{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.bui-accordion-th,.bui-accordion-td
+{
+  border-bottom: 2px solid #ddd;
+  text-align: left;
+  font-size: 0.875rem;
+  padding: 14px;
+}
+
+.bui-accordion-code,.bui-accordion-th
+{
+  background-color: #F0F0F1;
+  font-size: 1.1rem;
+}
+
+.bui-tablink-button
+{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  height: 32px;
+  padding: 10px 14px;
+  float: right;
+  cursor: pointer;
+  margin-left:10px;
+}
+
+.bui-tablink-button:hover
+{
+  border-bottom: 2px solid gray;
+}
+
+.bui-tablink-button:focus
+{
+background-color: #8eaec3;
+}
