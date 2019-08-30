@@ -1,0 +1,267 @@
+
+
+/*----BUTTONS----BUTTONS----BUTTONS----BUTTONS----BUTTONS-----BUTTONS-----BUTTONS-----BUTTONS-----BUTTONS----BUTTONS----BUTTONS-----BUTTONS----BUTTONS----*/
+
+.bui-button{
+    margin: 0.31rem;
+    height: 2rem;
+    padding: 0rem 1rem;
+    border-radius: 0.25rem;
+    outline: none;
+    font-size: 0.875rem;
+}
+
+/*------PRIMARY BUTTONS PROPERTIES----------*/
+.bui-primary-button,
+.bui-primary-disabled{
+    color: #FFFFFF;
+    background: #00568F;
+    border: 0;
+}
+.bui-primary-button:hover{
+    border: 0;
+    background:#0569A3;    
+    opacity: 0.7;
+}
+.bui-primary-button:active{
+    border: 0;
+    background: #012B54;
+}
+.bui-primary-disabled:disabled{
+    opacity: 0.3;
+}
+
+/*-------SECONDARY BUTTONS PROPERTIES----------*/
+.bui-secondary-button,
+.bui-secondary-disabled{
+    background:#FFF;
+    color:#55565A;
+    border:0.0625rem solid #CAC9C7;
+    padding: 0rem 0.9375rem;
+}
+
+.bui-secondary-button:hover{
+    border: 0.0625rem solid #0569A3;
+    color: #0569A3;
+}
+.bui-secondary-button:active{
+    border: 0.0625rem solid #012B54;
+    color: #012B54;
+}
+.bui-secondary-disabled:disabled{
+    opacity: 0.3;
+}
+/*----------ACCENT BUTTONS PROPERTIES-----------*/
+.bui-accent-button,
+.bui-accent-disabled{
+    background:#009775;
+    color:#FFFFFF;
+    border: 0;
+}
+
+.bui-accent-button:hover{
+    background: #00B58C;
+    border: 0;
+    opacity: 0.7;
+}
+.bui-accent-button:active{
+    border: 0;
+    background: #006E5F;
+}
+.bui-accent-disabled:disabled{
+    opacity: 0.3;
+}
+
+/*----------SIGNAL BUTTONS PROPERTIES----------*/
+.bui-warning-button,
+.bui-error-button,
+.bui-success-button,
+.bui-warning-disabled,
+.bui-error-disabled,
+.bui-success-disabled{
+    color:#FFFFFF;
+}
+/*---WARNING BUTTONS---*/
+.bui-warning-button,
+.bui-warning-disabled{
+    border: 0;
+    background:  #E35205;
+}
+.bui-warning-button:hover{
+    background:#F8D4C0;
+    opacity: 0.7;
+    border: 0;
+}
+.bui-warning-button:active{
+    border: 0;
+    background:  #F2A980;
+}
+.bui-warning-disabled:disabled{
+    opacity: 0.3;
+}
+
+/*---ERROR BUTTONS---*/
+.bui-error-button,
+.bui-error-disabled{
+    border: 0;
+    background: #BA0C2F;
+}
+
+.bui-error-button:hover{
+    background: #EFC3CC;
+    border: 0;
+    opacity: 0.7;
+}
+.bui-error-button:active{
+    border: 0;
+    background: #DE8799;
+}
+.bui-error-disabled:disabled{
+    opacity: 0.3;
+}
+
+/*---SUCCESS BUTTONS---*/
+.bui-success-button,
+.bui-success-disabled{
+    border: 0;
+    background: #78BE20;
+}
+.bui-success-button:hover{
+    background: #D9EEC9;
+    opacity: 0.7;
+    border: 0;
+}
+.bui-success-button:active{
+    border: 0;
+    background: #B2DD94;
+}
+.bui-success-disabled:disabled{
+    opacity: 0.3;
+}
+
+/*----------QUITE BUTTONS PROPERTIES----------*/
+.bui-quite-button,
+.bui-emphasis-button,
+.bui-quite-disabled,
+.bui-emphasis-disabled{
+    border: none;
+    background: none;
+}
+/*---QUITE DEFAULT BUTTONS---*/
+
+.bui-quite-button,
+.bui-quite-disabled{
+    color:#55565A;
+}
+.bui-quite-button:hover{
+    background: #F1F1F1;
+    opacity: 0.7;
+}
+.bui-quite-button:active{
+    background: #E2E2E2;
+}
+.bui-quite-disabled:disabled{
+    opacity: 0.3;
+}
+
+/*---QUITE EMPHASIS BUTTONS---*/
+.bui-emphasis-button,
+.bui-emphasis-disabled{
+    color:#00568F;
+}
+
+.bui-emphasis-button:hover{
+    background: #E5F5FC;
+    opacity: 0.7;
+}
+.bui-emphasis-button:active{
+    background: #BFE6F7;
+}
+.bui-emphasis-disabled:disabled{
+    opacity: 0.3;
+}
+
+/*----------ICON BUTTONS PROPERTIES----------*/
+.bui-icon-button,
+.bui-icon-disabled,
+.bui-icon-text-button,
+.bui-icon-text-disabled{
+    color: #FFFFFF;
+    border: 0;
+}
+.icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #FFFFFF;
+}
+
+.bui-icon-box,
+.bui-icon-Text-box{
+    display: flex;
+    align-items: center;
+}
+
+
+/*---ICON ONLY BUTTONS---*/
+.bui-icon-button,
+.bui-icon-disabled{
+    padding:0 0.5rem;
+    background: #00568F;
+    display: inline-flex;
+}
+.bui-icon-button:hover{
+    background: #0569A3;
+    opacity: 0.7;
+}
+.bui-icon-button:active{
+    background: #012B54;
+    opacity: 0.7;
+}
+.bui-icon-disabled:disabled{
+    opacity: 0.3;
+}
+
+/*---ICON AND TEXT BUTTONS---*/
+
+.bui-icon-text-space{
+    padding-left:0.5rem;
+}
+.bui-icon-text-button,
+.bui-icon-text-disabled{
+    padding:0 0.75rem;
+    background: #00568F;
+    display: flex;
+    align-items: center;
+
+
+    /* padding-right: unset;
+    padding-left: 8px; */
+}
+.bui-icon-text-button:hover{
+    background: #0569A3;
+    opacity: 0.7;
+}
+.bui-icon-text-button:active{
+    background: #012B54;
+    opacity: 0.7;
+}
+.bui-icon-text-disabled:disabled{
+    opacity: 0.3;
+}
+/* ICONS FOR THE BUTTONS  */
+.bui-icon-search{
+    background: url(./../../assets/images/search.svg) no-repeat;
+    margin-right:0;
+}
+.bui-icon-search-text{
+    background: url(./../../assets/images/search.svg) no-repeat;
+    margin-right:0.5rem;
+}
+.bui-icon-edit{
+    background: url(./../../assets/images/search.svg) no-repeat;
+    margin-right:0;
+}
+.bui-icon-edit-text{
+    background: url(./../../assets/images/search.svg) no-repeat;
+    margin-right:0.5rem;
+}
